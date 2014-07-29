@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/2/trunk/build/Debug/GNU-Linux-x86
+END
+MarkovEngineConsumer.o.d
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/2/trunk/build/Debug/GNU-Linux-x86/MarkovEngineConsumer.o.d
+END
+Calibrator.o.d
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2/trunk/build/Debug/GNU-Linux-x86/Calibrator.o.d
+END
+MidiHandlerProducer.o.d
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/2/trunk/build/Debug/GNU-Linux-x86/MidiHandlerProducer.o.d
+END
+main.o.d
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/2/trunk/build/Debug/GNU-Linux-x86/main.o.d
+END
+VOMC.o.d
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/2/trunk/build/Debug/GNU-Linux-x86/VOMC.o.d
+END
+Metronome.o.d
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/2/trunk/build/Debug/GNU-Linux-x86/Metronome.o.d
+END
+Meter.o.d
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2/trunk/build/Debug/GNU-Linux-x86/Meter.o.d
+END
+LetterPattern.o.d
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2/trunk/build/Debug/GNU-Linux-x86/LetterPattern.o.d
+END
+RawNote.o.d
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/build/Debug/GNU-Linux-x86/RawNote.o.d
+END
+Letter.o.d
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/2/trunk/build/Debug/GNU-Linux-x86/Letter.o.d
+END
+State.o.d
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2/trunk/build/Debug/GNU-Linux-x86/State.o.d
+END

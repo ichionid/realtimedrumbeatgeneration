@@ -1,0 +1,2683 @@
+desc: (none)
+cmd: dist/Debug_To_Release/GNU-Linux-x86/realtimebeatgenerationthesis
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2755303
+mem_heap_B=26
+mem_heap_extra_B=14
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=5801487
+mem_heap_B=8244
+mem_heap_extra_B=2052
+mem_stacks_B=0
+heap_tree=detailed
+n13: 8244 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2004 0x408CC68: MidiInApi::MidiInApi(unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+  n0: 2004 0x587409A: ???
+ n1: 1280 0x8076B0F: __gnu_cxx::new_allocator<LetterPattern>::allocate(unsigned int, void const*) (new_allocator.h:92)
+  n1: 1280 0x80769A6: std::_Vector_base<LetterPattern, std::allocator<LetterPattern> >::_M_allocate(unsigned int) (in /home/puppy/NetBeansProjects/RealTimeBeatGenerationThesis/dist/Debug_To_Release/GNU-Linux-x86/realtimebeatgenerationthesis)
+   n1: 1280 0x80765E8: std::vector<LetterPattern, std::allocator<LetterPattern> >::_M_insert_aux(__gnu_cxx::__normal_iterator<LetterPattern*, std::vector<LetterPattern, std::allocator<LetterPattern> > >, LetterPattern const&) (vector.tcc:327)
+    n2: 1280 0x807646B: std::vector<LetterPattern, std::allocator<LetterPattern> >::push_back(LetterPattern const&) (stl_vector.h:834)
+     n2: 1280 0x8075670: Helper::Helper() (Helper.cpp:138)
+      n1: 640 0x807B301: RealTimeIOMain::RealTimeIOMain() (RealTimeIOMain.cpp:36)
+       n0: 640 0x806E873: main (main.cpp:51)
+      n1: 640 0x806EA6A: MidiHandlerProducer::MidiHandlerProducer(SynchronizedQueue<Meter>*, double, double, double, double, double, Helper*, Metronome*) (MidiHandlerProducer.cpp:33)
+       n1: 640 0x807B49D: RealTimeIOMain::RealTimeIOMain() (RealTimeIOMain.cpp:66)
+        n0: 640 0x806E873: main (main.cpp:51)
+     n0: 0 in 5 places, all below massif's threshold (01.00%)
+ n1: 821 0x41267D2: std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&) (in /usr/lib/i386-linux-gnu/libstdc++.so.6.0.16)
+  n1: 821 0x4128A46: char* std::string::_S_construct<char const*>(char const*, char const*, std::allocator<char> const&, std::forward_iterator_tag) (in /usr/lib/i386-linux-gnu/libstdc++.so.6.0.16)
+   n3: 821 0x4128BB4: std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&) (in /usr/lib/i386-linux-gnu/libstdc++.so.6.0.16)
+    n1: 351 0x807B301: RealTimeIOMain::RealTimeIOMain() (RealTimeIOMain.cpp:36)
+     n0: 351 0x806E873: main (main.cpp:51)
+    n1: 351 0x806EA6A: MidiHandlerProducer::MidiHandlerProducer(SynchronizedQueue<Meter>*, double, double, double, double, double, Helper*, Metronome*) (MidiHandlerProducer.cpp:33)
+     n1: 351 0x807B49D: RealTimeIOMain::RealTimeIOMain() (RealTimeIOMain.cpp:66)
+      n0: 351 0x806E873: main (main.cpp:51)
+    n0: 119 in 4 places, all below massif's threshold (01.00%)
+ n1: 728 0x426FE27: __tzfile_read (tzfile.c:292)
+  n1: 728 0x426F67D: tzset_internal (tzset.c:439)
+   n1: 728 0x426F950: __tz_convert (tzset.c:624)
+    n1: 728 0x426E049: localtime_r (localtime.c:33)
+     n1: 728 0x8063492: boost::date_time::microsec_clock<boost::posix_time::ptime>::create_time(tm* (*)(long const*, tm*)) (microsec_time_clock.hpp:100)
+      n1: 728 0x8062AB1: boost::date_time::microsec_clock<boost::posix_time::ptime>::local_time() (microsec_time_clock.hpp:70)
+       n1: 728 0x807B354: RealTimeIOMain::RealTimeIOMain() (RealTimeIOMain.cpp:38)
+        n0: 728 0x806E873: main (main.cpp:51)
+ n0: 587 in 26 places, all below massif's threshold (01.00%)
+ n1: 520 0x41F9149: __new_exitfn (cxa_atexit.c:101)
+  n1: 520 0x41F91A9: __internal_atexit (cxa_atexit.c:35)
+   n1: 520 0x808803F: _GLOBAL__sub_I__ZN9MetronomeC2Ev (Metronome.cpp:205)
+    n1: 520 0x808BBA0: __libc_csu_init (in /home/puppy/NetBeansProjects/RealTimeBeatGenerationThesis/dist/Debug_To_Release/GNU-Linux-x86/realtimebeatgenerationthesis)
+     n0: 520 0x41DF468: (below main) (libc-start.c:185)
+ n1: 512 0x8066F0A: __gnu_cxx::new_allocator<Meter>::allocate(unsigned int, void const*) (new_allocator.h:92)
+  n1: 512 0x806FD19: std::_Deque_base<Meter, std::allocator<Meter> >::_M_allocate_node() (stl_deque.h:525)
+   n1: 512 0x80733A4: std::_Deque_base<Meter, std::allocator<Meter> >::_M_create_nodes(Meter**, Meter**) (stl_deque.h:619)
+    n2: 512 0x8072D0A: std::_Deque_base<Meter, std::allocator<Meter> >::_M_initialize_map(unsigned int) (stl_deque.h:593)
+     n1: 512 0x8072F0F: std::_Deque_base<Meter, std::allocator<Meter> >::_Deque_base(std::allocator<Meter> const&, unsigned int) (stl_deque.h:460)
+      n1: 512 0x807282E: std::deque<Meter, std::allocator<Meter> >::deque(std::deque<Meter, std::allocator<Meter> > const&) (stl_deque.h:831)
+       n1: 512 0x80721DC: std::queue<Meter, std::deque<Meter, std::allocator<Meter> > >::queue(std::deque<Meter, std::allocator<Meter> > const&) (stl_queue.h:134)
+        n1: 512 0x80719E8: SynchronizedQueue<Meter>::SynchronizedQueue() (SynchronizedQueue.h:39)
+         n1: 512 0x807B36D: RealTimeIOMain::RealTimeIOMain() (RealTimeIOMain.cpp:40)
+          n0: 512 0x806E873: main (main.cpp:51)
+     n0: 0 in 1 place, below massif's threshold (01.00%)
+ n1: 364 0x807C130: boost::detail::thread_data<MidiHandlerProducer>* boost::detail::heap_new_impl<boost::detail::thread_data<MidiHandlerProducer>, MidiHandlerProducer&>(MidiHandlerProducer&) (thread_heap_alloc.hpp:47)
+  n1: 364 0x807BF61: boost::detail::thread_data<MidiHandlerProducer>* boost::detail::heap_new<boost::detail::thread_data<MidiHandlerProducer>, MidiHandlerProducer>(MidiHandlerProducer&) (thread_heap_alloc.hpp:73)
+   n1: 364 0x807BE4E: boost::shared_ptr<boost::detail::thread_data_base> boost::thread::make_thread_info<MidiHandlerProducer>(MidiHandlerProducer) (thread.hpp:150)
+    n1: 364 0x807BCE8: boost::thread::thread<MidiHandlerProducer>(MidiHandlerProducer, boost::disable_if<boost::is_convertible<MidiHandlerProducer&, boost::detail::thread_move_t<MidiHandlerProducer> >, boost::thread::dummy*>::type) (thread.hpp:216)
+     n1: 364 0x807B4DD: RealTimeIOMain::RealTimeIOMain() (RealTimeIOMain.cpp:67)
+      n0: 364 0x806E873: main (main.cpp:51)
+ n2: 352 0x422BD16: __fopen_internal (iofopen.c:76)
+  n1: 352 0x4393356: snd_config_update (conf.c:3799)
+   n1: 352 0x440CD0D: snd_seq_open (seq.c:979)
+    n1: 352 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+     n1: 352 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+      n1: 352 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n0: 352 0x50731CA: ???
+  n0: 0 in 1 place, below massif's threshold (01.00%)
+ n1: 344 0x80590E0: __gnu_cxx::new_allocator<int>::allocate(unsigned int, void const*) (new_allocator.h:92)
+  n2: 344 0x80578C6: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned int) (in /home/puppy/NetBeansProjects/RealTimeBeatGenerationThesis/dist/Debug_To_Release/GNU-Linux-x86/realtimebeatgenerationthesis)
+   n1: 344 0x8057939: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned int, std::allocator<int> const&) (stl_vector.h:123)
+    n2: 344 0x80561E7: std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) (stl_vector.h:279)
+     n2: 344 0x80573EF: LetterPattern::LetterPattern(LetterPattern const&) (LetterPattern.h:20)
+      n1: 264 0x8076D04: void std::_Construct<LetterPattern, LetterPattern>(LetterPattern*, LetterPattern const&) (stl_construct.h:84)
+       n1: 264 0x8076C6A: LetterPattern* std::__uninitialized_copy<false>::__uninit_copy<LetterPattern*, LetterPattern*>(LetterPattern*, LetterPattern*, LetterPattern*) (stl_uninitialized.h:77)
+        n1: 264 0x8076BC3: LetterPattern* std::uninitialized_copy<LetterPattern*, LetterPattern*>(LetterPattern*, LetterPattern*, LetterPattern*) (stl_uninitialized.h:119)
+         n1: 264 0x8076B30: LetterPattern* std::__uninitialized_copy_a<LetterPattern*, LetterPattern*, LetterPattern>(LetterPattern*, LetterPattern*, LetterPattern*, std::allocator<LetterPattern>&) (stl_uninitialized.h:259)
+          n1: 264 0x80769DE: LetterPattern* std::__uninitialized_move_a<LetterPattern*, LetterPattern*, std::allocator<LetterPattern> >(LetterPattern*, LetterPattern*, LetterPattern*, std::allocator<LetterPattern>&) (stl_uninitialized.h:269)
+           n1: 264 0x8076656: std::vector<LetterPattern, std::allocator<LetterPattern> >::_M_insert_aux(__gnu_cxx::__normal_iterator<LetterPattern*, std::vector<LetterPattern, std::allocator<LetterPattern> > >, LetterPattern const&) (vector.tcc:343)
+            n2: 264 0x807646B: std::vector<LetterPattern, std::allocator<LetterPattern> >::push_back(LetterPattern const&) (stl_vector.h:834)
+             n2: 264 0x8075670: Helper::Helper() (Helper.cpp:138)
+              n1: 132 0x807B301: RealTimeIOMain::RealTimeIOMain() (RealTimeIOMain.cpp:36)
+               n0: 132 0x806E873: main (main.cpp:51)
+              n1: 132 0x806EA6A: MidiHandlerProducer::MidiHandlerProducer(SynchronizedQueue<Meter>*, double, double, double, double, double, Helper*, Metronome*) (MidiHandlerProducer.cpp:33)
+               n1: 132 0x807B49D: RealTimeIOMain::RealTimeIOMain() (RealTimeIOMain.cpp:66)
+                n0: 132 0x806E873: main (main.cpp:51)
+             n0: 0 in 4 places, all below massif's threshold (01.00%)
+      n0: 80 in 1 place, below massif's threshold (01.00%)
+     n0: 0 in 21 places, all below massif's threshold (01.00%)
+   n0: 0 in 2 places, all below massif's threshold (01.00%)
+ n1: 304 0x807BFFC: boost::detail::thread_data<Metronome>* boost::detail::heap_new_impl<boost::detail::thread_data<Metronome>, Metronome&>(Metronome&) (thread_heap_alloc.hpp:47)
+  n1: 304 0x807BE75: boost::detail::thread_data<Metronome>* boost::detail::heap_new<boost::detail::thread_data<Metronome>, Metronome>(Metronome&) (thread_heap_alloc.hpp:73)
+   n1: 304 0x807BD47: boost::shared_ptr<boost::detail::thread_data_base> boost::thread::make_thread_info<Metronome>(Metronome) (thread.hpp:150)
+    n1: 304 0x807BBBB: boost::thread::thread<Metronome>(Metronome, boost::disable_if<boost::is_convertible<Metronome&, boost::detail::thread_move_t<Metronome> >, boost::thread::dummy*>::type) (thread.hpp:216)
+     n1: 304 0x807B3EF: RealTimeIOMain::RealTimeIOMain() (RealTimeIOMain.cpp:48)
+      n0: 304 0x806E873: main (main.cpp:51)
+ n1: 288 0x40112F3: allocate_dtv (dl-tls.c:297)
+  n1: 288 0x4011A9A: _dl_allocate_tls (dl-tls.c:461)
+   n1: 288 0x407346F: pthread_create@@GLIBC_2.1 (allocatestack.c:571)
+    n2: 288 0x405644E: boost::thread::start_thread() (in /usr/local/lib/libboost_thread.so.1.51.0)
+     n1: 144 0x807B3EF: RealTimeIOMain::RealTimeIOMain() (RealTimeIOMain.cpp:48)
+      n0: 144 0x806E873: main (main.cpp:51)
+     n1: 144 0x807B4DD: RealTimeIOMain::RealTimeIOMain() (RealTimeIOMain.cpp:67)
+      n0: 144 0x806E873: main (main.cpp:51)
+ n1: 140 0x807B363: RealTimeIOMain::RealTimeIOMain() (RealTimeIOMain.cpp:40)
+  n0: 140 0x806E873: main (main.cpp:51)
+#-----------
+snapshot=3
+#-----------
+time=7519537
+mem_heap_B=28795
+mem_heap_extra_B=14493
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=12327198
+mem_heap_B=28931
+mem_heap_extra_B=14573
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=12695240
+mem_heap_B=31999
+mem_heap_extra_B=16537
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=18701859
+mem_heap_B=64732
+mem_heap_extra_B=16532
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=18703336
+mem_heap_B=64816
+mem_heap_extra_B=16560
+mem_stacks_B=0
+heap_tree=detailed
+n7: 64816 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 32792 0x42792D6: __alloc_dir (opendir.c:202)
+  n1: 32792 0x42793F5: __opendirat (opendir.c:148)
+   n1: 32792 0x427A1C1: scandirat (scandirat.c:56)
+    n1: 32792 0x427984D: scandir (scandir.c:37)
+     n1: 32792 0x43913D7: snd_config_hook_load (conf.c:3508)
+      n1: 32792 0x439212C: snd_config_hooks.constprop.27 (conf.c:3326)
+       n1: 32792 0x4392DC7: snd_config_update_r (conf.c:3768)
+        n1: 32792 0x4393356: snd_config_update (conf.c:3799)
+         n1: 32792 0x440CD0D: snd_seq_open (seq.c:979)
+          n1: 32792 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 32792 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 32792 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n0: 32792 0x50731CA: ???
+ n2: 17712 0x438BF00: _snd_config_make (conf.c:902)
+  n5: 17532 0x438BFD7: _snd_config_make_add (conf.c:928)
+   n2: 10296 0x438CBAE: parse_value (conf.c:1022)
+    n3: 8280 0x438EF8C: parse_defs (conf.c:1248)
+     n2: 5940 0x438F251: parse_defs (conf.c:1231)
+      n2: 4212 0x438F251: parse_defs (conf.c:1231)
+       n2: 2196 0x438F251: parse_defs (conf.c:1231)
+        n1: 1548 0x438F58C: snd_config_load1 (conf.c:1661)
+         n1: 1548 0x4393356: snd_config_update (conf.c:3799)
+          n1: 1548 0x440CD0D: snd_seq_open (seq.c:979)
+           n1: 1548 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 1548 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n1: 1548 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+              n0: 1548 0x50731CA: ???
+        n0: 648 in 1 place, below massif's threshold (01.00%)
+       n1: 2016 0x438F58C: snd_config_load1 (conf.c:1661)
+        n1: 2016 0x4393356: snd_config_update (conf.c:3799)
+         n1: 2016 0x440CD0D: snd_seq_open (seq.c:979)
+          n1: 2016 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 2016 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 2016 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n0: 2016 0x50731CA: ???
+      n1: 1728 0x438F58C: snd_config_load1 (conf.c:1661)
+       n1: 1728 0x4393356: snd_config_update (conf.c:3799)
+        n1: 1728 0x440CD0D: snd_seq_open (seq.c:979)
+         n1: 1728 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1728 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1728 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n0: 1728 0x50731CA: ???
+     n1: 1908 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 1908 0x4393356: snd_config_update (conf.c:3799)
+       n1: 1908 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 1908 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 1908 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1908 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 1908 0x50731CA: ???
+     n0: 432 in 1 place, below massif's threshold (01.00%)
+    n1: 2016 0x438F391: parse_array_defs (conf.c:1094)
+     n2: 2016 0x438F023: parse_defs (conf.c:1234)
+      n2: 1800 0x438F251: parse_defs (conf.c:1231)
+       n1: 1008 0x438F58C: snd_config_load1 (conf.c:1661)
+        n1: 1008 0x4393356: snd_config_update (conf.c:3799)
+         n1: 1008 0x440CD0D: snd_seq_open (seq.c:979)
+          n1: 1008 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1008 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 1008 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n0: 1008 0x50731CA: ???
+       n0: 792 in 1 place, below massif's threshold (01.00%)
+      n0: 216 in 1 place, below massif's threshold (01.00%)
+   n3: 4860 0x438EFFA: parse_defs (conf.c:1225)
+    n2: 3816 0x438F251: parse_defs (conf.c:1231)
+     n1: 2052 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 2052 0x4393356: snd_config_update (conf.c:3799)
+       n1: 2052 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 2052 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 2052 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 2052 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 2052 0x50731CA: ???
+     n2: 1764 0x438F251: parse_defs (conf.c:1231)
+      n1: 1116 0x438F58C: snd_config_load1 (conf.c:1661)
+       n1: 1116 0x4393356: snd_config_update (conf.c:3799)
+        n1: 1116 0x440CD0D: snd_seq_open (seq.c:979)
+         n1: 1116 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1116 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1116 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n0: 1116 0x50731CA: ???
+      n0: 648 in 1 place, below massif's threshold (01.00%)
+    n1: 828 0x438F58C: snd_config_load1 (conf.c:1661)
+     n1: 828 0x4393356: snd_config_update (conf.c:3799)
+      n1: 828 0x440CD0D: snd_seq_open (seq.c:979)
+       n1: 828 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+        n1: 828 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 828 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n0: 828 0x50731CA: ???
+    n0: 216 in 1 place, below massif's threshold (01.00%)
+   n2: 1188 0x438EEB1: parse_defs (conf.c:1183)
+    n1: 1008 0x438F58C: snd_config_load1 (conf.c:1661)
+     n1: 1008 0x4393356: snd_config_update (conf.c:3799)
+      n1: 1008 0x440CD0D: snd_seq_open (seq.c:979)
+       n1: 1008 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+        n1: 1008 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 1008 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n0: 1008 0x50731CA: ???
+    n0: 180 in 1 place, below massif's threshold (01.00%)
+   n1: 828 0x438CD16: parse_value (conf.c:1001)
+    n1: 828 0x438EF8C: parse_defs (conf.c:1248)
+     n0: 828 in 2 places, all below massif's threshold (01.00%)
+   n0: 360 in 1 place, below massif's threshold (01.00%)
+  n0: 180 in 2 places, all below massif's threshold (01.00%)
+ n2: 5909 0x438BE81: copy_local_string.isra.2 (conf.c:766)
+  n0: 4342 in 113 places, all below massif's threshold (01.00%)
+  n0: 1567 0x61666562: ???
+ n0: 4298 in 46 places, all below massif's threshold (01.00%)
+ n1: 2004 0x408CC68: MidiInApi::MidiInApi(unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+  n0: 2004 0x587409A: ???
+ n1: 1280 0x8076B0F: __gnu_cxx::new_allocator<LetterPattern>::allocate(unsigned int, void const*) (new_allocator.h:92)
+  n1: 1280 0x80769A6: std::_Vector_base<LetterPattern, std::allocator<LetterPattern> >::_M_allocate(unsigned int) (in /home/puppy/NetBeansProjects/RealTimeBeatGenerationThesis/dist/Debug_To_Release/GNU-Linux-x86/realtimebeatgenerationthesis)
+   n1: 1280 0x80765E8: std::vector<LetterPattern, std::allocator<LetterPattern> >::_M_insert_aux(__gnu_cxx::__normal_iterator<LetterPattern*, std::vector<LetterPattern, std::allocator<LetterPattern> > >, LetterPattern const&) (vector.tcc:327)
+    n2: 1280 0x807646B: std::vector<LetterPattern, std::allocator<LetterPattern> >::push_back(LetterPattern const&) (stl_vector.h:834)
+     n1: 1280 0x8075670: Helper::Helper() (Helper.cpp:138)
+      n0: 1280 in 2 places, all below massif's threshold (01.00%)
+     n0: 0 in 5 places, all below massif's threshold (01.00%)
+ n1: 821 0x41267D2: std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&) (in /usr/lib/i386-linux-gnu/libstdc++.so.6.0.16)
+  n1: 821 0x4128A46: char* std::string::_S_construct<char const*>(char const*, char const*, std::allocator<char> const&, std::forward_iterator_tag) (in /usr/lib/i386-linux-gnu/libstdc++.so.6.0.16)
+   n1: 821 0x4128BB4: std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&) (in /usr/lib/i386-linux-gnu/libstdc++.so.6.0.16)
+    n0: 821 in 6 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=8
+#-----------
+time=22305174
+mem_heap_B=32432
+mem_heap_extra_B=16584
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=22515822
+mem_heap_B=33659
+mem_heap_extra_B=17053
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=32133528
+mem_heap_B=34466
+mem_heap_extra_B=17102
+mem_stacks_B=0
+heap_tree=detailed
+n9: 34466 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 18432 0x438BF00: _snd_config_make (conf.c:902)
+  n5: 18288 0x438BFD7: _snd_config_make_add (conf.c:928)
+   n2: 10692 0x438CBAE: parse_value (conf.c:1022)
+    n3: 8676 0x438EF8C: parse_defs (conf.c:1248)
+     n2: 6408 0x438F251: parse_defs (conf.c:1231)
+      n2: 4428 0x438F251: parse_defs (conf.c:1231)
+       n2: 2268 0x438F251: parse_defs (conf.c:1231)
+        n2: 1620 0x438F58C: snd_config_load1 (conf.c:1661)
+         n1: 1548 0x4393356: snd_config_update (conf.c:3799)
+          n1: 1548 0x440CD0D: snd_seq_open (seq.c:979)
+           n1: 1548 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 1548 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n1: 1548 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+              n0: 1548 0x50731CA: ???
+         n0: 72 in 1 place, below massif's threshold (01.00%)
+        n1: 648 0x438F251: parse_defs (conf.c:1231)
+         n1: 648 0x438F58C: snd_config_load1 (conf.c:1661)
+          n1: 648 0x4393356: snd_config_update (conf.c:3799)
+           n1: 648 0x440CD0D: snd_seq_open (seq.c:979)
+            n1: 648 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n1: 648 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+              n1: 648 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+               n0: 648 0x50731CA: ???
+       n2: 2160 0x438F58C: snd_config_load1 (conf.c:1661)
+        n1: 2016 0x4393356: snd_config_update (conf.c:3799)
+         n1: 2016 0x440CD0D: snd_seq_open (seq.c:979)
+          n1: 2016 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 2016 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 2016 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n0: 2016 0x50731CA: ???
+        n0: 144 in 1 place, below massif's threshold (01.00%)
+      n2: 1980 0x438F58C: snd_config_load1 (conf.c:1661)
+       n1: 1728 0x4393356: snd_config_update (conf.c:3799)
+        n1: 1728 0x440CD0D: snd_seq_open (seq.c:979)
+         n1: 1728 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1728 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1728 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n0: 1728 0x50731CA: ???
+       n0: 252 in 1 place, below massif's threshold (01.00%)
+     n1: 1908 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 1908 0x4393356: snd_config_update (conf.c:3799)
+       n1: 1908 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 1908 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 1908 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1908 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 1908 0x50731CA: ???
+     n0: 360 in 1 place, below massif's threshold (01.00%)
+    n1: 2016 0x438F391: parse_array_defs (conf.c:1094)
+     n2: 2016 0x438F023: parse_defs (conf.c:1234)
+      n2: 1872 0x438F251: parse_defs (conf.c:1231)
+       n2: 1080 0x438F58C: snd_config_load1 (conf.c:1661)
+        n1: 1008 0x4393356: snd_config_update (conf.c:3799)
+         n1: 1008 0x440CD0D: snd_seq_open (seq.c:979)
+          n1: 1008 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1008 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 1008 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n0: 1008 0x50731CA: ???
+        n0: 72 in 1 place, below massif's threshold (01.00%)
+       n1: 792 0x438F251: parse_defs (conf.c:1231)
+        n0: 792 in 2 places, all below massif's threshold (01.00%)
+      n0: 144 in 1 place, below massif's threshold (01.00%)
+   n3: 5256 0x438EFFA: parse_defs (conf.c:1225)
+    n2: 4068 0x438F251: parse_defs (conf.c:1231)
+     n2: 2268 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 2052 0x4393356: snd_config_update (conf.c:3799)
+       n1: 2052 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 2052 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 2052 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 2052 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 2052 0x50731CA: ???
+      n0: 216 in 1 place, below massif's threshold (01.00%)
+     n2: 1800 0x438F251: parse_defs (conf.c:1231)
+      n2: 1152 0x438F58C: snd_config_load1 (conf.c:1661)
+       n1: 1116 0x4393356: snd_config_update (conf.c:3799)
+        n1: 1116 0x440CD0D: snd_seq_open (seq.c:979)
+         n1: 1116 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1116 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1116 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n0: 1116 0x50731CA: ???
+       n0: 36 in 1 place, below massif's threshold (01.00%)
+      n1: 648 0x438F251: parse_defs (conf.c:1231)
+       n1: 648 0x438F58C: snd_config_load1 (conf.c:1661)
+        n1: 648 0x4393356: snd_config_update (conf.c:3799)
+         n1: 648 0x440CD0D: snd_seq_open (seq.c:979)
+          n1: 648 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 648 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 648 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n0: 648 0x50731CA: ???
+    n2: 1008 0x438F58C: snd_config_load1 (conf.c:1661)
+     n1: 792 0x4393356: snd_config_update (conf.c:3799)
+      n1: 792 0x440CD0D: snd_seq_open (seq.c:979)
+       n1: 792 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+        n1: 792 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 792 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n0: 792 0x50731CA: ???
+     n0: 216 in 1 place, below massif's threshold (01.00%)
+    n0: 180 in 1 place, below massif's threshold (01.00%)
+   n2: 1224 0x438EEB1: parse_defs (conf.c:1183)
+    n2: 1044 0x438F58C: snd_config_load1 (conf.c:1661)
+     n1: 1008 0x4393356: snd_config_update (conf.c:3799)
+      n1: 1008 0x440CD0D: snd_seq_open (seq.c:979)
+       n1: 1008 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+        n1: 1008 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 1008 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n0: 1008 0x50731CA: ???
+     n0: 36 in 1 place, below massif's threshold (01.00%)
+    n0: 180 in 1 place, below massif's threshold (01.00%)
+   n1: 828 0x438CD16: parse_value (conf.c:1001)
+    n2: 828 0x438EF8C: parse_defs (conf.c:1248)
+     n1: 756 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 756 0x4393356: snd_config_update (conf.c:3799)
+       n1: 756 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 756 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 756 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 756 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 756 0x50731CA: ???
+     n0: 72 in 1 place, below massif's threshold (01.00%)
+   n0: 288 in 1 place, below massif's threshold (01.00%)
+  n0: 144 in 2 places, all below massif's threshold (01.00%)
+ n2: 6240 0x438BE81: copy_local_string.isra.2 (conf.c:766)
+  n0: 4673 in 124 places, all below massif's threshold (01.00%)
+  n0: 1567 0x61666562: ???
+ n0: 3131 in 49 places, all below massif's threshold (01.00%)
+ n1: 2004 0x408CC68: MidiInApi::MidiInApi(unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+  n0: 2004 0x587409A: ???
+ n1: 1310 0x400AE0E: _dl_new_object (dl-object.c:77)
+  n1: 1310 0x4006436: _dl_map_object_from_fd (dl-load.c:1051)
+   n2: 1310 0x400839E: _dl_map_object (dl-load.c:2568)
+    n1: 680 0x4012D5B: dl_open_worker (dl-open.c:225)
+     n1: 680 0x400ECBD: _dl_catch_error (dl-error.c:178)
+      n1: 680 0x4462BE7: dlopen_doit (dlopen.c:67)
+       n1: 680 0x400ECBD: _dl_catch_error (dl-error.c:178)
+        n0: 680 0x0: ???
+    n1: 630 0x400D166: openaux (dl-deps.c:65)
+     n1: 630 0x400ECBD: _dl_catch_error (dl-error.c:178)
+      n1: 630 0x4012DB8: dl_open_worker (dl-open.c:262)
+       n1: 630 0x400ECBD: _dl_catch_error (dl-error.c:178)
+        n1: 630 0x4462BE7: dlopen_doit (dlopen.c:67)
+         n1: 630 0x400ECBD: _dl_catch_error (dl-error.c:178)
+          n0: 630 0x0: ???
+ n1: 1280 0x8076B0F: __gnu_cxx::new_allocator<LetterPattern>::allocate(unsigned int, void const*) (new_allocator.h:92)
+  n1: 1280 0x80769A6: std::_Vector_base<LetterPattern, std::allocator<LetterPattern> >::_M_allocate(unsigned int) (in /home/puppy/NetBeansProjects/RealTimeBeatGenerationThesis/dist/Debug_To_Release/GNU-Linux-x86/realtimebeatgenerationthesis)
+   n1: 1280 0x80765E8: std::vector<LetterPattern, std::allocator<LetterPattern> >::_M_insert_aux(__gnu_cxx::__normal_iterator<LetterPattern*, std::vector<LetterPattern, std::allocator<LetterPattern> > >, LetterPattern const&) (vector.tcc:327)
+    n2: 1280 0x807646B: std::vector<LetterPattern, std::allocator<LetterPattern> >::push_back(LetterPattern const&) (stl_vector.h:834)
+     n2: 1280 0x8075670: Helper::Helper() (Helper.cpp:138)
+      n1: 640 0x807B301: RealTimeIOMain::RealTimeIOMain() (RealTimeIOMain.cpp:36)
+       n0: 640 0x806E873: main (main.cpp:51)
+      n1: 640 0x806EA6A: MidiHandlerProducer::MidiHandlerProducer(SynchronizedQueue<Meter>*, double, double, double, double, double, Helper*, Metronome*) (MidiHandlerProducer.cpp:33)
+       n1: 640 0x807B49D: RealTimeIOMain::RealTimeIOMain() (RealTimeIOMain.cpp:66)
+        n0: 640 0x806E873: main (main.cpp:51)
+     n0: 0 in 5 places, all below massif's threshold (01.00%)
+ n1: 821 0x41267D2: std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&) (in /usr/lib/i386-linux-gnu/libstdc++.so.6.0.16)
+  n1: 821 0x4128A46: char* std::string::_S_construct<char const*>(char const*, char const*, std::allocator<char> const&, std::forward_iterator_tag) (in /usr/lib/i386-linux-gnu/libstdc++.so.6.0.16)
+   n1: 821 0x4128BB4: std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&) (in /usr/lib/i386-linux-gnu/libstdc++.so.6.0.16)
+    n0: 821 in 6 places, all below massif's threshold (01.00%)
+ n1: 728 0x426FE27: __tzfile_read (tzfile.c:292)
+  n1: 728 0x426F67D: tzset_internal (tzset.c:439)
+   n1: 728 0x426F950: __tz_convert (tzset.c:624)
+    n1: 728 0x426E049: localtime_r (localtime.c:33)
+     n1: 728 0x8063492: boost::date_time::microsec_clock<boost::posix_time::ptime>::create_time(tm* (*)(long const*, tm*)) (microsec_time_clock.hpp:100)
+      n1: 728 0x8062AB1: boost::date_time::microsec_clock<boost::posix_time::ptime>::local_time() (microsec_time_clock.hpp:70)
+       n1: 728 0x807B354: RealTimeIOMain::RealTimeIOMain() (RealTimeIOMain.cpp:38)
+        n0: 728 0x806E873: main (main.cpp:51)
+ n1: 520 0x41F9149: __new_exitfn (cxa_atexit.c:101)
+  n1: 520 0x41F91A9: __internal_atexit (cxa_atexit.c:35)
+   n1: 520 0x808803F: _GLOBAL__sub_I__ZN9MetronomeC2Ev (Metronome.cpp:205)
+    n1: 520 0x808BBA0: __libc_csu_init (in /home/puppy/NetBeansProjects/RealTimeBeatGenerationThesis/dist/Debug_To_Release/GNU-Linux-x86/realtimebeatgenerationthesis)
+     n0: 520 0x41DF468: (below main) (libc-start.c:185)
+#-----------
+snapshot=11
+#-----------
+time=51348443
+mem_heap_B=35897
+mem_heap_extra_B=17167
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=51386751
+mem_heap_B=38078
+mem_heap_extra_B=17298
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=54995370
+mem_heap_B=38790
+mem_heap_extra_B=17322
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=55057304
+mem_heap_B=41773
+mem_heap_extra_B=17491
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=58665918
+mem_heap_B=42481
+mem_heap_extra_B=17527
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=58808195
+mem_heap_B=48447
+mem_heap_extra_B=17921
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=64253445
+mem_heap_B=48382
+mem_heap_extra_B=17906
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=66674771
+mem_heap_B=51974
+mem_heap_extra_B=18018
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=70290412
+mem_heap_B=52102
+mem_heap_extra_B=18026
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=72700627
+mem_heap_B=51799
+mem_heap_extra_B=18081
+mem_stacks_B=0
+heap_tree=detailed
+n10: 51799 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 18324 0x438BF00: _snd_config_make (conf.c:902)
+  n5: 18288 0x438BFD7: _snd_config_make_add (conf.c:928)
+   n2: 10692 0x438CBAE: parse_value (conf.c:1022)
+    n3: 8676 0x438EF8C: parse_defs (conf.c:1248)
+     n2: 6408 0x438F251: parse_defs (conf.c:1231)
+      n2: 4428 0x438F251: parse_defs (conf.c:1231)
+       n2: 2268 0x438F251: parse_defs (conf.c:1231)
+        n2: 1620 0x438F58C: snd_config_load1 (conf.c:1661)
+         n1: 1548 0x4393356: snd_config_update (conf.c:3799)
+          n1: 1548 0x440CD0D: snd_seq_open (seq.c:979)
+           n1: 1548 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 1548 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n1: 1548 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+              n0: 1548 0x50731CA: ???
+         n0: 72 in 1 place, below massif's threshold (01.00%)
+        n0: 648 in 1 place, below massif's threshold (01.00%)
+       n2: 2160 0x438F58C: snd_config_load1 (conf.c:1661)
+        n1: 2016 0x4393356: snd_config_update (conf.c:3799)
+         n1: 2016 0x440CD0D: snd_seq_open (seq.c:979)
+          n1: 2016 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 2016 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 2016 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n0: 2016 0x50731CA: ???
+        n0: 144 in 1 place, below massif's threshold (01.00%)
+      n2: 1980 0x438F58C: snd_config_load1 (conf.c:1661)
+       n1: 1728 0x4393356: snd_config_update (conf.c:3799)
+        n1: 1728 0x440CD0D: snd_seq_open (seq.c:979)
+         n1: 1728 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1728 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1728 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n0: 1728 0x50731CA: ???
+       n0: 252 in 1 place, below massif's threshold (01.00%)
+     n1: 1908 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 1908 0x4393356: snd_config_update (conf.c:3799)
+       n1: 1908 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 1908 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 1908 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1908 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 1908 0x50731CA: ???
+     n0: 360 in 1 place, below massif's threshold (01.00%)
+    n1: 2016 0x438F391: parse_array_defs (conf.c:1094)
+     n2: 2016 0x438F023: parse_defs (conf.c:1234)
+      n2: 1872 0x438F251: parse_defs (conf.c:1231)
+       n2: 1080 0x438F58C: snd_config_load1 (conf.c:1661)
+        n1: 1008 0x4393356: snd_config_update (conf.c:3799)
+         n1: 1008 0x440CD0D: snd_seq_open (seq.c:979)
+          n1: 1008 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1008 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 1008 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n0: 1008 0x50731CA: ???
+        n0: 72 in 1 place, below massif's threshold (01.00%)
+       n1: 792 0x438F251: parse_defs (conf.c:1231)
+        n0: 792 in 2 places, all below massif's threshold (01.00%)
+      n0: 144 in 1 place, below massif's threshold (01.00%)
+   n3: 5256 0x438EFFA: parse_defs (conf.c:1225)
+    n2: 4068 0x438F251: parse_defs (conf.c:1231)
+     n2: 2268 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 2052 0x4393356: snd_config_update (conf.c:3799)
+       n1: 2052 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 2052 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 2052 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 2052 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 2052 0x50731CA: ???
+      n0: 216 in 1 place, below massif's threshold (01.00%)
+     n2: 1800 0x438F251: parse_defs (conf.c:1231)
+      n2: 1152 0x438F58C: snd_config_load1 (conf.c:1661)
+       n1: 1116 0x4393356: snd_config_update (conf.c:3799)
+        n1: 1116 0x440CD0D: snd_seq_open (seq.c:979)
+         n1: 1116 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1116 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1116 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n0: 1116 0x50731CA: ???
+       n0: 36 in 1 place, below massif's threshold (01.00%)
+      n0: 648 in 1 place, below massif's threshold (01.00%)
+    n2: 1008 0x438F58C: snd_config_load1 (conf.c:1661)
+     n1: 792 0x4393356: snd_config_update (conf.c:3799)
+      n1: 792 0x440CD0D: snd_seq_open (seq.c:979)
+       n1: 792 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+        n1: 792 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 792 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n0: 792 0x50731CA: ???
+     n0: 216 in 1 place, below massif's threshold (01.00%)
+    n0: 180 in 1 place, below massif's threshold (01.00%)
+   n2: 1224 0x438EEB1: parse_defs (conf.c:1183)
+    n2: 1044 0x438F58C: snd_config_load1 (conf.c:1661)
+     n1: 1008 0x4393356: snd_config_update (conf.c:3799)
+      n1: 1008 0x440CD0D: snd_seq_open (seq.c:979)
+       n1: 1008 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+        n1: 1008 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 1008 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n0: 1008 0x50731CA: ???
+     n0: 36 in 1 place, below massif's threshold (01.00%)
+    n0: 180 in 1 place, below massif's threshold (01.00%)
+   n1: 828 0x438CD16: parse_value (conf.c:1001)
+    n2: 828 0x438EF8C: parse_defs (conf.c:1248)
+     n1: 756 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 756 0x4393356: snd_config_update (conf.c:3799)
+       n1: 756 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 756 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 756 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 756 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 756 0x50731CA: ???
+     n0: 72 in 1 place, below massif's threshold (01.00%)
+   n0: 288 in 1 place, below massif's threshold (01.00%)
+  n0: 36 in 2 places, all below massif's threshold (01.00%)
+ n1: 10768 0x400AE0E: _dl_new_object (dl-object.c:77)
+  n1: 10768 0x4006436: _dl_map_object_from_fd (dl-load.c:1051)
+   n2: 10768 0x400839E: _dl_map_object (dl-load.c:2568)
+    n1: 10088 0x400D166: openaux (dl-deps.c:65)
+     n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+      n1: 10088 0x4012DB8: dl_open_worker (dl-open.c:262)
+       n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+        n1: 10088 0x4462BE7: dlopen_doit (dlopen.c:67)
+         n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+          n0: 10088 0x0: ???
+    n0: 680 in 1 place, below massif's threshold (01.00%)
+ n0: 6306 in 61 places, all below massif's threshold (01.00%)
+ n2: 6240 0x438BE81: copy_local_string.isra.2 (conf.c:766)
+  n0: 4673 in 124 places, all below massif's threshold (01.00%)
+  n0: 1567 0x61666562: ???
+ n1: 2688 0x401045B: _dl_check_map_versions (dl-version.c:300)
+  n1: 2688 0x4013369: dl_open_worker (dl-open.c:268)
+   n1: 2688 0x400ECBD: _dl_catch_error (dl-error.c:178)
+    n1: 2688 0x4462BE7: dlopen_doit (dlopen.c:67)
+     n1: 2688 0x400ECBD: _dl_catch_error (dl-error.c:178)
+      n0: 2688 0x0: ???
+ n2: 2640 0x58E81CC: pa_xmalloc0 (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+  n1: 1584 0x58F98EC: pa_hashmap_new (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+   n0: 1584 in 3 places, all below massif's threshold (01.00%)
+  n1: 1056 0x58F910D: pa_flist_new_with_name (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+   n1: 1056 0x58F97B3: ??? (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+    n1: 1056 0x590A97A: pa_run_once (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+     n1: 1056 0x58F9A6C: pa_hashmap_put (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+      n1: 1056 0x58B3177: pa_proplist_sets (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+       n1: 1056 0x5899112: pa_context_new_with_proplist (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+        n1: 1056 0x5899329: pa_context_new (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+         n1: 1056 0x40307F3: ???
+          n1: 1056 0x439212C: snd_config_hooks.constprop.27 (conf.c:3326)
+           n1: 1056 0x43927FF: snd_config_searcha_hooks (conf.c:3127)
+            n1: 1056 0x43928D1: snd_config_searchva_hooks (conf.c:3164)
+             n0: 1056 0x4473756: ???
+ n1: 2004 0x408CC68: MidiInApi::MidiInApi(unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+  n0: 2004 0x587409A: ???
+ n1: 1280 0x8076B0F: __gnu_cxx::new_allocator<LetterPattern>::allocate(unsigned int, void const*) (new_allocator.h:92)
+  n1: 1280 0x80769A6: std::_Vector_base<LetterPattern, std::allocator<LetterPattern> >::_M_allocate(unsigned int) (in /home/puppy/NetBeansProjects/RealTimeBeatGenerationThesis/dist/Debug_To_Release/GNU-Linux-x86/realtimebeatgenerationthesis)
+   n1: 1280 0x80765E8: std::vector<LetterPattern, std::allocator<LetterPattern> >::_M_insert_aux(__gnu_cxx::__normal_iterator<LetterPattern*, std::vector<LetterPattern, std::allocator<LetterPattern> > >, LetterPattern const&) (vector.tcc:327)
+    n2: 1280 0x807646B: std::vector<LetterPattern, std::allocator<LetterPattern> >::push_back(LetterPattern const&) (stl_vector.h:834)
+     n1: 1280 0x8075670: Helper::Helper() (Helper.cpp:138)
+      n0: 1280 in 2 places, all below massif's threshold (01.00%)
+     n0: 0 in 5 places, all below massif's threshold (01.00%)
+ n1: 821 0x41267D2: std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&) (in /usr/lib/i386-linux-gnu/libstdc++.so.6.0.16)
+  n1: 821 0x4128A46: char* std::string::_S_construct<char const*>(char const*, char const*, std::allocator<char> const&, std::forward_iterator_tag) (in /usr/lib/i386-linux-gnu/libstdc++.so.6.0.16)
+   n1: 821 0x4128BB4: std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&) (in /usr/lib/i386-linux-gnu/libstdc++.so.6.0.16)
+    n0: 821 in 6 places, all below massif's threshold (01.00%)
+ n1: 728 0x426FE27: __tzfile_read (tzfile.c:292)
+  n1: 728 0x426F67D: tzset_internal (tzset.c:439)
+   n1: 728 0x426F950: __tz_convert (tzset.c:624)
+    n1: 728 0x426E049: localtime_r (localtime.c:33)
+     n1: 728 0x8063492: boost::date_time::microsec_clock<boost::posix_time::ptime>::create_time(tm* (*)(long const*, tm*)) (microsec_time_clock.hpp:100)
+      n1: 728 0x8062AB1: boost::date_time::microsec_clock<boost::posix_time::ptime>::local_time() (microsec_time_clock.hpp:70)
+       n1: 728 0x807B354: RealTimeIOMain::RealTimeIOMain() (RealTimeIOMain.cpp:38)
+        n0: 728 0x806E873: main (main.cpp:51)
+#-----------
+snapshot=21
+#-----------
+time=76302714
+mem_heap_B=72514
+mem_heap_extra_B=18062
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=79905293
+mem_heap_B=75047
+mem_heap_extra_B=18049
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=83507451
+mem_heap_B=75015
+mem_heap_extra_B=18041
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=85914967
+mem_heap_B=75121
+mem_heap_extra_B=18055
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=88316935
+mem_heap_B=75121
+mem_heap_extra_B=18055
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=96719132
+mem_heap_B=75121
+mem_heap_extra_B=18055
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=97921786
+mem_heap_B=75121
+mem_heap_extra_B=18055
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=100326499
+mem_heap_B=75121
+mem_heap_extra_B=18055
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=101546675
+mem_heap_B=51827
+mem_heap_extra_B=18013
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=105170621
+mem_heap_B=84619
+mem_heap_extra_B=18021
+mem_stacks_B=0
+heap_tree=detailed
+n9: 84619 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 32792 0x42792D6: __alloc_dir (opendir.c:202)
+  n2: 32792 0x42793F5: __opendirat (opendir.c:148)
+   n1: 32792 0x427943B: opendir (opendir.c:156)
+    n1: 32792 0x5913B20: pa_shm_cleanup (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+     n1: 32792 0x5913D6A: pa_shm_create_rw (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+      n1: 32792 0x59049B0: pa_mempool_new (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+       n1: 32792 0x589924A: pa_context_new_with_proplist (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+        n1: 32792 0x5899329: pa_context_new (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+         n1: 32792 0x40307F3: ???
+          n1: 32792 0x439212C: snd_config_hooks.constprop.27 (conf.c:3326)
+           n1: 32792 0x43927FF: snd_config_searcha_hooks (conf.c:3127)
+            n1: 32792 0x43928D1: snd_config_searchva_hooks (conf.c:3164)
+             n0: 32792 0x4473756: ???
+   n0: 0 in 1 place, below massif's threshold (01.00%)
+ n2: 18324 0x438BF00: _snd_config_make (conf.c:902)
+  n4: 18288 0x438BFD7: _snd_config_make_add (conf.c:928)
+   n2: 10692 0x438CBAE: parse_value (conf.c:1022)
+    n3: 8676 0x438EF8C: parse_defs (conf.c:1248)
+     n2: 6408 0x438F251: parse_defs (conf.c:1231)
+      n2: 4428 0x438F251: parse_defs (conf.c:1231)
+       n2: 2268 0x438F251: parse_defs (conf.c:1231)
+        n2: 1620 0x438F58C: snd_config_load1 (conf.c:1661)
+         n1: 1548 0x4393356: snd_config_update (conf.c:3799)
+          n1: 1548 0x440CD0D: snd_seq_open (seq.c:979)
+           n1: 1548 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 1548 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n1: 1548 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+              n0: 1548 0x50731CA: ???
+         n0: 72 in 1 place, below massif's threshold (01.00%)
+        n0: 648 in 1 place, below massif's threshold (01.00%)
+       n2: 2160 0x438F58C: snd_config_load1 (conf.c:1661)
+        n1: 2016 0x4393356: snd_config_update (conf.c:3799)
+         n1: 2016 0x440CD0D: snd_seq_open (seq.c:979)
+          n1: 2016 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 2016 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 2016 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n0: 2016 0x50731CA: ???
+        n0: 144 in 1 place, below massif's threshold (01.00%)
+      n2: 1980 0x438F58C: snd_config_load1 (conf.c:1661)
+       n1: 1728 0x4393356: snd_config_update (conf.c:3799)
+        n1: 1728 0x440CD0D: snd_seq_open (seq.c:979)
+         n1: 1728 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1728 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1728 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n0: 1728 0x50731CA: ???
+       n0: 252 in 1 place, below massif's threshold (01.00%)
+     n1: 1908 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 1908 0x4393356: snd_config_update (conf.c:3799)
+       n1: 1908 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 1908 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 1908 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1908 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 1908 0x50731CA: ???
+     n0: 360 in 1 place, below massif's threshold (01.00%)
+    n1: 2016 0x438F391: parse_array_defs (conf.c:1094)
+     n2: 2016 0x438F023: parse_defs (conf.c:1234)
+      n2: 1872 0x438F251: parse_defs (conf.c:1231)
+       n1: 1080 0x438F58C: snd_config_load1 (conf.c:1661)
+        n0: 1080 in 2 places, all below massif's threshold (01.00%)
+       n0: 792 in 1 place, below massif's threshold (01.00%)
+      n0: 144 in 1 place, below massif's threshold (01.00%)
+   n2: 5256 0x438EFFA: parse_defs (conf.c:1225)
+    n2: 4068 0x438F251: parse_defs (conf.c:1231)
+     n2: 2268 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 2052 0x4393356: snd_config_update (conf.c:3799)
+       n1: 2052 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 2052 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 2052 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 2052 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 2052 0x50731CA: ???
+      n0: 216 in 1 place, below massif's threshold (01.00%)
+     n2: 1800 0x438F251: parse_defs (conf.c:1231)
+      n2: 1152 0x438F58C: snd_config_load1 (conf.c:1661)
+       n1: 1116 0x4393356: snd_config_update (conf.c:3799)
+        n1: 1116 0x440CD0D: snd_seq_open (seq.c:979)
+         n1: 1116 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1116 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1116 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n0: 1116 0x50731CA: ???
+       n0: 36 in 1 place, below massif's threshold (01.00%)
+      n0: 648 in 1 place, below massif's threshold (01.00%)
+    n0: 1188 in 2 places, all below massif's threshold (01.00%)
+   n2: 1224 0x438EEB1: parse_defs (conf.c:1183)
+    n1: 1044 0x438F58C: snd_config_load1 (conf.c:1661)
+     n0: 1044 in 2 places, all below massif's threshold (01.00%)
+    n0: 180 in 1 place, below massif's threshold (01.00%)
+   n0: 1116 in 2 places, all below massif's threshold (01.00%)
+  n0: 36 in 2 places, all below massif's threshold (01.00%)
+ n1: 10768 0x400AE0E: _dl_new_object (dl-object.c:77)
+  n1: 10768 0x4006436: _dl_map_object_from_fd (dl-load.c:1051)
+   n2: 10768 0x400839E: _dl_map_object (dl-load.c:2568)
+    n1: 10088 0x400D166: openaux (dl-deps.c:65)
+     n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+      n1: 10088 0x4012DB8: dl_open_worker (dl-open.c:262)
+       n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+        n1: 10088 0x4462BE7: dlopen_doit (dlopen.c:67)
+         n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+          n0: 10088 0x0: ???
+    n0: 680 in 1 place, below massif's threshold (01.00%)
+ n0: 7883 in 71 places, all below massif's threshold (01.00%)
+ n2: 6240 0x438BE81: copy_local_string.isra.2 (conf.c:766)
+  n0: 4673 in 124 places, all below massif's threshold (01.00%)
+  n0: 1567 0x61666562: ???
+ n1: 2688 0x401045B: _dl_check_map_versions (dl-version.c:300)
+  n1: 2688 0x4013369: dl_open_worker (dl-open.c:268)
+   n1: 2688 0x400ECBD: _dl_catch_error (dl-error.c:178)
+    n1: 2688 0x4462BE7: dlopen_doit (dlopen.c:67)
+     n1: 2688 0x400ECBD: _dl_catch_error (dl-error.c:178)
+      n0: 2688 0x0: ???
+ n2: 2640 0x58E81CC: pa_xmalloc0 (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+  n1: 1584 0x58F98EC: pa_hashmap_new (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+   n0: 1584 in 3 places, all below massif's threshold (01.00%)
+  n1: 1056 0x58F910D: pa_flist_new_with_name (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+   n1: 1056 0x58F97B3: ??? (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+    n1: 1056 0x590A97A: pa_run_once (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+     n1: 1056 0x58F9A6C: pa_hashmap_put (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+      n1: 1056 0x58B3177: pa_proplist_sets (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+       n1: 1056 0x5899112: pa_context_new_with_proplist (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+        n1: 1056 0x5899329: pa_context_new (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+         n1: 1056 0x40307F3: ???
+          n1: 1056 0x439212C: snd_config_hooks.constprop.27 (conf.c:3326)
+           n1: 1056 0x43927FF: snd_config_searcha_hooks (conf.c:3127)
+            n1: 1056 0x43928D1: snd_config_searchva_hooks (conf.c:3164)
+             n0: 1056 0x4473756: ???
+ n1: 2004 0x408CC68: MidiInApi::MidiInApi(unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+  n0: 2004 0x587409A: ???
+ n1: 1280 0x8076B0F: __gnu_cxx::new_allocator<LetterPattern>::allocate(unsigned int, void const*) (new_allocator.h:92)
+  n1: 1280 0x80769A6: std::_Vector_base<LetterPattern, std::allocator<LetterPattern> >::_M_allocate(unsigned int) (in /home/puppy/NetBeansProjects/RealTimeBeatGenerationThesis/dist/Debug_To_Release/GNU-Linux-x86/realtimebeatgenerationthesis)
+   n1: 1280 0x80765E8: std::vector<LetterPattern, std::allocator<LetterPattern> >::_M_insert_aux(__gnu_cxx::__normal_iterator<LetterPattern*, std::vector<LetterPattern, std::allocator<LetterPattern> > >, LetterPattern const&) (vector.tcc:327)
+    n2: 1280 0x807646B: std::vector<LetterPattern, std::allocator<LetterPattern> >::push_back(LetterPattern const&) (stl_vector.h:834)
+     n1: 1280 0x8075670: Helper::Helper() (Helper.cpp:138)
+      n0: 1280 in 2 places, all below massif's threshold (01.00%)
+     n0: 0 in 5 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=31
+#-----------
+time=105179900
+mem_heap_B=51851
+mem_heap_extra_B=18021
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=108782737
+mem_heap_B=51971
+mem_heap_extra_B=18029
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=111246889
+mem_heap_B=60340
+mem_heap_extra_B=18084
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=113648256
+mem_heap_B=60483
+mem_heap_extra_B=18117
+mem_stacks_B=0
+heap_tree=detailed
+n10: 60483 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 18324 0x438BF00: _snd_config_make (conf.c:902)
+  n5: 18288 0x438BFD7: _snd_config_make_add (conf.c:928)
+   n2: 10692 0x438CBAE: parse_value (conf.c:1022)
+    n3: 8676 0x438EF8C: parse_defs (conf.c:1248)
+     n2: 6408 0x438F251: parse_defs (conf.c:1231)
+      n2: 4428 0x438F251: parse_defs (conf.c:1231)
+       n2: 2268 0x438F251: parse_defs (conf.c:1231)
+        n2: 1620 0x438F58C: snd_config_load1 (conf.c:1661)
+         n1: 1548 0x4393356: snd_config_update (conf.c:3799)
+          n1: 1548 0x440CD0D: snd_seq_open (seq.c:979)
+           n1: 1548 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 1548 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n1: 1548 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+              n0: 1548 0x50731CA: ???
+         n0: 72 in 1 place, below massif's threshold (01.00%)
+        n0: 648 in 1 place, below massif's threshold (01.00%)
+       n2: 2160 0x438F58C: snd_config_load1 (conf.c:1661)
+        n1: 2016 0x4393356: snd_config_update (conf.c:3799)
+         n1: 2016 0x440CD0D: snd_seq_open (seq.c:979)
+          n1: 2016 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 2016 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 2016 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n0: 2016 0x50731CA: ???
+        n0: 144 in 1 place, below massif's threshold (01.00%)
+      n2: 1980 0x438F58C: snd_config_load1 (conf.c:1661)
+       n1: 1728 0x4393356: snd_config_update (conf.c:3799)
+        n1: 1728 0x440CD0D: snd_seq_open (seq.c:979)
+         n1: 1728 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1728 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1728 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n0: 1728 0x50731CA: ???
+       n0: 252 in 1 place, below massif's threshold (01.00%)
+     n1: 1908 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 1908 0x4393356: snd_config_update (conf.c:3799)
+       n1: 1908 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 1908 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 1908 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1908 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 1908 0x50731CA: ???
+     n0: 360 in 1 place, below massif's threshold (01.00%)
+    n1: 2016 0x438F391: parse_array_defs (conf.c:1094)
+     n2: 2016 0x438F023: parse_defs (conf.c:1234)
+      n2: 1872 0x438F251: parse_defs (conf.c:1231)
+       n2: 1080 0x438F58C: snd_config_load1 (conf.c:1661)
+        n1: 1008 0x4393356: snd_config_update (conf.c:3799)
+         n1: 1008 0x440CD0D: snd_seq_open (seq.c:979)
+          n1: 1008 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1008 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 1008 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n0: 1008 0x50731CA: ???
+        n0: 72 in 1 place, below massif's threshold (01.00%)
+       n1: 792 0x438F251: parse_defs (conf.c:1231)
+        n0: 792 in 2 places, all below massif's threshold (01.00%)
+      n0: 144 in 1 place, below massif's threshold (01.00%)
+   n3: 5256 0x438EFFA: parse_defs (conf.c:1225)
+    n2: 4068 0x438F251: parse_defs (conf.c:1231)
+     n2: 2268 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 2052 0x4393356: snd_config_update (conf.c:3799)
+       n1: 2052 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 2052 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 2052 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 2052 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 2052 0x50731CA: ???
+      n0: 216 in 1 place, below massif's threshold (01.00%)
+     n2: 1800 0x438F251: parse_defs (conf.c:1231)
+      n2: 1152 0x438F58C: snd_config_load1 (conf.c:1661)
+       n1: 1116 0x4393356: snd_config_update (conf.c:3799)
+        n1: 1116 0x440CD0D: snd_seq_open (seq.c:979)
+         n1: 1116 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1116 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1116 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n0: 1116 0x50731CA: ???
+       n0: 36 in 1 place, below massif's threshold (01.00%)
+      n0: 648 in 1 place, below massif's threshold (01.00%)
+    n2: 1008 0x438F58C: snd_config_load1 (conf.c:1661)
+     n1: 792 0x4393356: snd_config_update (conf.c:3799)
+      n1: 792 0x440CD0D: snd_seq_open (seq.c:979)
+       n1: 792 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+        n1: 792 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 792 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n0: 792 0x50731CA: ???
+     n0: 216 in 1 place, below massif's threshold (01.00%)
+    n0: 180 in 1 place, below massif's threshold (01.00%)
+   n2: 1224 0x438EEB1: parse_defs (conf.c:1183)
+    n2: 1044 0x438F58C: snd_config_load1 (conf.c:1661)
+     n1: 1008 0x4393356: snd_config_update (conf.c:3799)
+      n1: 1008 0x440CD0D: snd_seq_open (seq.c:979)
+       n1: 1008 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+        n1: 1008 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 1008 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n0: 1008 0x50731CA: ???
+     n0: 36 in 1 place, below massif's threshold (01.00%)
+    n0: 180 in 1 place, below massif's threshold (01.00%)
+   n1: 828 0x438CD16: parse_value (conf.c:1001)
+    n1: 828 0x438EF8C: parse_defs (conf.c:1248)
+     n0: 828 in 2 places, all below massif's threshold (01.00%)
+   n0: 288 in 1 place, below massif's threshold (01.00%)
+  n0: 36 in 2 places, all below massif's threshold (01.00%)
+ n3: 10912 0x58E81CC: pa_xmalloc0 (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+  n2: 9280 0x58F910D: pa_flist_new_with_name (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+   n1: 8224 0x58F9233: pa_flist_new (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+    n1: 8224 0x5904AE8: pa_mempool_new (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+     n1: 8224 0x589924A: pa_context_new_with_proplist (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+      n1: 8224 0x5899329: pa_context_new (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+       n1: 8224 0x40307F3: ???
+        n1: 8224 0x439212C: snd_config_hooks.constprop.27 (conf.c:3326)
+         n1: 8224 0x43927FF: snd_config_searcha_hooks (conf.c:3127)
+          n1: 8224 0x43928D1: snd_config_searchva_hooks (conf.c:3164)
+           n0: 8224 0x4473756: ???
+   n1: 1056 0x58F97B3: ??? (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+    n1: 1056 0x590A97A: pa_run_once (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+     n1: 1056 0x58F9A6C: pa_hashmap_put (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+      n1: 1056 0x58B3177: pa_proplist_sets (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+       n1: 1056 0x5899112: pa_context_new_with_proplist (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+        n1: 1056 0x5899329: pa_context_new (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+         n1: 1056 0x40307F3: ???
+          n1: 1056 0x439212C: snd_config_hooks.constprop.27 (conf.c:3326)
+           n1: 1056 0x43927FF: snd_config_searcha_hooks (conf.c:3127)
+            n1: 1056 0x43928D1: snd_config_searchva_hooks (conf.c:3164)
+             n0: 1056 0x4473756: ???
+  n1: 1584 0x58F98EC: pa_hashmap_new (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+   n0: 1584 in 3 places, all below massif's threshold (01.00%)
+  n0: 48 in 1 place, below massif's threshold (01.00%)
+ n1: 10768 0x400AE0E: _dl_new_object (dl-object.c:77)
+  n1: 10768 0x4006436: _dl_map_object_from_fd (dl-load.c:1051)
+   n2: 10768 0x400839E: _dl_map_object (dl-load.c:2568)
+    n1: 10088 0x400D166: openaux (dl-deps.c:65)
+     n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+      n1: 10088 0x4012DB8: dl_open_worker (dl-open.c:262)
+       n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+        n1: 10088 0x4462BE7: dlopen_doit (dlopen.c:67)
+         n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+          n0: 10088 0x0: ???
+    n0: 680 in 1 place, below massif's threshold (01.00%)
+ n0: 6565 in 73 places, all below massif's threshold (01.00%)
+ n2: 6240 0x438BE81: copy_local_string.isra.2 (conf.c:766)
+  n0: 4673 in 124 places, all below massif's threshold (01.00%)
+  n0: 1567 0x61666562: ???
+ n1: 2688 0x401045B: _dl_check_map_versions (dl-version.c:300)
+  n1: 2688 0x4013369: dl_open_worker (dl-open.c:268)
+   n1: 2688 0x400ECBD: _dl_catch_error (dl-error.c:178)
+    n1: 2688 0x4462BE7: dlopen_doit (dlopen.c:67)
+     n1: 2688 0x400ECBD: _dl_catch_error (dl-error.c:178)
+      n0: 2688 0x0: ???
+ n1: 2004 0x408CC68: MidiInApi::MidiInApi(unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+  n0: 2004 0x587409A: ???
+ n1: 1280 0x8076B0F: __gnu_cxx::new_allocator<LetterPattern>::allocate(unsigned int, void const*) (new_allocator.h:92)
+  n1: 1280 0x80769A6: std::_Vector_base<LetterPattern, std::allocator<LetterPattern> >::_M_allocate(unsigned int) (in /home/puppy/NetBeansProjects/RealTimeBeatGenerationThesis/dist/Debug_To_Release/GNU-Linux-x86/realtimebeatgenerationthesis)
+   n1: 1280 0x80765E8: std::vector<LetterPattern, std::allocator<LetterPattern> >::_M_insert_aux(__gnu_cxx::__normal_iterator<LetterPattern*, std::vector<LetterPattern, std::allocator<LetterPattern> > >, LetterPattern const&) (vector.tcc:327)
+    n2: 1280 0x807646B: std::vector<LetterPattern, std::allocator<LetterPattern> >::push_back(LetterPattern const&) (stl_vector.h:834)
+     n1: 1280 0x8075670: Helper::Helper() (Helper.cpp:138)
+      n0: 1280 in 2 places, all below massif's threshold (01.00%)
+     n0: 0 in 5 places, all below massif's threshold (01.00%)
+ n1: 881 0x58E80D4: pa_xmalloc (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+  n0: 881 in 12 places, all below massif's threshold (01.00%)
+ n1: 821 0x41267D2: std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&) (in /usr/lib/i386-linux-gnu/libstdc++.so.6.0.16)
+  n1: 821 0x4128A46: char* std::string::_S_construct<char const*>(char const*, char const*, std::allocator<char> const&, std::forward_iterator_tag) (in /usr/lib/i386-linux-gnu/libstdc++.so.6.0.16)
+   n1: 821 0x4128BB4: std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&) (in /usr/lib/i386-linux-gnu/libstdc++.so.6.0.16)
+    n0: 821 in 6 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=35
+#-----------
+time=116049301
+mem_heap_B=60386
+mem_heap_extra_B=18110
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=119651498
+mem_heap_B=61834
+mem_heap_extra_B=18198
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=122087209
+mem_heap_B=66087
+mem_heap_extra_B=18409
+mem_stacks_B=0
+heap_tree=detailed
+n9: 66087 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 18396 0x438BF00: _snd_config_make (conf.c:902)
+  n4: 18288 0x438BFD7: _snd_config_make_add (conf.c:928)
+   n2: 10692 0x438CBAE: parse_value (conf.c:1022)
+    n3: 8676 0x438EF8C: parse_defs (conf.c:1248)
+     n2: 6408 0x438F251: parse_defs (conf.c:1231)
+      n2: 4428 0x438F251: parse_defs (conf.c:1231)
+       n2: 2268 0x438F251: parse_defs (conf.c:1231)
+        n2: 1620 0x438F58C: snd_config_load1 (conf.c:1661)
+         n1: 1548 0x4393356: snd_config_update (conf.c:3799)
+          n1: 1548 0x440CD0D: snd_seq_open (seq.c:979)
+           n1: 1548 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 1548 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n1: 1548 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+              n0: 1548 0x50731CA: ???
+         n0: 72 in 1 place, below massif's threshold (01.00%)
+        n0: 648 in 1 place, below massif's threshold (01.00%)
+       n2: 2160 0x438F58C: snd_config_load1 (conf.c:1661)
+        n1: 2016 0x4393356: snd_config_update (conf.c:3799)
+         n1: 2016 0x440CD0D: snd_seq_open (seq.c:979)
+          n1: 2016 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 2016 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 2016 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n0: 2016 0x50731CA: ???
+        n0: 144 in 1 place, below massif's threshold (01.00%)
+      n2: 1980 0x438F58C: snd_config_load1 (conf.c:1661)
+       n1: 1728 0x4393356: snd_config_update (conf.c:3799)
+        n1: 1728 0x440CD0D: snd_seq_open (seq.c:979)
+         n1: 1728 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1728 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1728 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n0: 1728 0x50731CA: ???
+       n0: 252 in 1 place, below massif's threshold (01.00%)
+     n1: 1908 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 1908 0x4393356: snd_config_update (conf.c:3799)
+       n1: 1908 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 1908 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 1908 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1908 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 1908 0x50731CA: ???
+     n0: 360 in 1 place, below massif's threshold (01.00%)
+    n1: 2016 0x438F391: parse_array_defs (conf.c:1094)
+     n2: 2016 0x438F023: parse_defs (conf.c:1234)
+      n2: 1872 0x438F251: parse_defs (conf.c:1231)
+       n2: 1080 0x438F58C: snd_config_load1 (conf.c:1661)
+        n1: 1008 0x4393356: snd_config_update (conf.c:3799)
+         n1: 1008 0x440CD0D: snd_seq_open (seq.c:979)
+          n1: 1008 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1008 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 1008 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n0: 1008 0x50731CA: ???
+        n0: 72 in 1 place, below massif's threshold (01.00%)
+       n0: 792 in 1 place, below massif's threshold (01.00%)
+      n0: 144 in 1 place, below massif's threshold (01.00%)
+   n3: 5256 0x438EFFA: parse_defs (conf.c:1225)
+    n2: 4068 0x438F251: parse_defs (conf.c:1231)
+     n2: 2268 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 2052 0x4393356: snd_config_update (conf.c:3799)
+       n1: 2052 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 2052 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 2052 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 2052 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 2052 0x50731CA: ???
+      n0: 216 in 1 place, below massif's threshold (01.00%)
+     n2: 1800 0x438F251: parse_defs (conf.c:1231)
+      n2: 1152 0x438F58C: snd_config_load1 (conf.c:1661)
+       n1: 1116 0x4393356: snd_config_update (conf.c:3799)
+        n1: 1116 0x440CD0D: snd_seq_open (seq.c:979)
+         n1: 1116 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1116 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1116 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n0: 1116 0x50731CA: ???
+       n0: 36 in 1 place, below massif's threshold (01.00%)
+      n0: 648 in 1 place, below massif's threshold (01.00%)
+    n1: 1008 0x438F58C: snd_config_load1 (conf.c:1661)
+     n0: 1008 in 2 places, all below massif's threshold (01.00%)
+    n0: 180 in 1 place, below massif's threshold (01.00%)
+   n2: 1224 0x438EEB1: parse_defs (conf.c:1183)
+    n2: 1044 0x438F58C: snd_config_load1 (conf.c:1661)
+     n1: 1008 0x4393356: snd_config_update (conf.c:3799)
+      n1: 1008 0x440CD0D: snd_seq_open (seq.c:979)
+       n1: 1008 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+        n1: 1008 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 1008 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n0: 1008 0x50731CA: ???
+     n0: 36 in 1 place, below massif's threshold (01.00%)
+    n0: 180 in 1 place, below massif's threshold (01.00%)
+   n0: 1116 in 2 places, all below massif's threshold (01.00%)
+  n0: 108 in 2 places, all below massif's threshold (01.00%)
+ n3: 15164 0x58E81CC: pa_xmalloc0 (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+  n5: 12448 0x58F910D: pa_flist_new_with_name (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+   n1: 8224 0x58F9233: pa_flist_new (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+    n1: 8224 0x5904AE8: pa_mempool_new (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+     n1: 8224 0x589924A: pa_context_new_with_proplist (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+      n1: 8224 0x5899329: pa_context_new (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+       n1: 8224 0x40307F3: ???
+        n1: 8224 0x439212C: snd_config_hooks.constprop.27 (conf.c:3326)
+         n1: 8224 0x43927FF: snd_config_searcha_hooks (conf.c:3127)
+          n1: 8224 0x43928D1: snd_config_searchva_hooks (conf.c:3164)
+           n0: 8224 0x4473756: ???
+   n1: 1056 0x58F97B3: ??? (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+    n1: 1056 0x590A97A: pa_run_once (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+     n1: 1056 0x58F9A6C: pa_hashmap_put (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+      n1: 1056 0x58B3177: pa_proplist_sets (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+       n1: 1056 0x5899112: pa_context_new_with_proplist (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+        n1: 1056 0x5899329: pa_context_new (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+         n1: 1056 0x40307F3: ???
+          n1: 1056 0x439212C: snd_config_hooks.constprop.27 (conf.c:3326)
+           n1: 1056 0x43927FF: snd_config_searcha_hooks (conf.c:3127)
+            n1: 1056 0x43928D1: snd_config_searchva_hooks (conf.c:3164)
+             n0: 1056 0x4473756: ???
+   n1: 1056 0x590F8B3: ??? (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+    n1: 1056 0x590A97A: pa_run_once (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+     n1: 1056 0x590FDB6: pa_pstream_send_packet (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+      n1: 1056 0x590F572: pa_pstream_send_tagstruct_with_creds (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+       n1: 1056 0x589C9B6: ??? (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+        n1: 1056 0x59151D5: ??? (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+         n1: 1056 0x58B1C7E: pa_mainloop_dispatch (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+          n1: 1056 0x58B1FC1: pa_mainloop_iterate (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+           n1: 1056 0x4030846: ???
+            n1: 1056 0x439212C: snd_config_hooks.constprop.27 (conf.c:3326)
+             n1: 1056 0x43927FF: snd_config_searcha_hooks (conf.c:3127)
+              n1: 1056 0x43928D1: snd_config_searchva_hooks (conf.c:3164)
+               n0: 1056 0x4473756: ???
+   n1: 1056 0x5912793: ??? (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+    n1: 1056 0x590A97A: pa_run_once (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+     n1: 1056 0x5912828: pa_queue_push (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+      n1: 1056 0x590FE09: pa_pstream_send_packet (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+       n1: 1056 0x590F572: pa_pstream_send_tagstruct_with_creds (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+        n1: 1056 0x589C9B6: ??? (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+         n1: 1056 0x59151D5: ??? (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+          n1: 1056 0x58B1C7E: pa_mainloop_dispatch (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+           n1: 1056 0x58B1FC1: pa_mainloop_iterate (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+            n1: 1056 0x4030846: ???
+             n1: 1056 0x439212C: snd_config_hooks.constprop.27 (conf.c:3326)
+              n1: 1056 0x43927FF: snd_config_searcha_hooks (conf.c:3127)
+               n1: 1056 0x43928D1: snd_config_searchva_hooks (conf.c:3164)
+                n0: 1056 0x4473756: ???
+   n1: 1056 0x590B523: ??? (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+    n1: 1056 0x590A97A: pa_run_once (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+     n1: 1056 0x590B6D3: pa_pdispatch_register_reply (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+      n1: 1056 0x589C9E7: ??? (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+       n1: 1056 0x59151D5: ??? (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+        n1: 1056 0x58B1C7E: pa_mainloop_dispatch (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+         n1: 1056 0x58B1FC1: pa_mainloop_iterate (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+          n1: 1056 0x4030846: ???
+           n1: 1056 0x439212C: snd_config_hooks.constprop.27 (conf.c:3326)
+            n1: 1056 0x43927FF: snd_config_searcha_hooks (conf.c:3127)
+             n1: 1056 0x43928D1: snd_config_searchva_hooks (conf.c:3164)
+              n0: 1056 0x4473756: ???
+  n1: 2640 0x58F98EC: pa_hashmap_new (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+   n0: 2640 in 5 places, all below massif's threshold (01.00%)
+  n0: 76 in 3 places, all below massif's threshold (01.00%)
+ n1: 10768 0x400AE0E: _dl_new_object (dl-object.c:77)
+  n1: 10768 0x4006436: _dl_map_object_from_fd (dl-load.c:1051)
+   n2: 10768 0x400839E: _dl_map_object (dl-load.c:2568)
+    n1: 10088 0x400D166: openaux (dl-deps.c:65)
+     n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+      n1: 10088 0x4012DB8: dl_open_worker (dl-open.c:262)
+       n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+        n1: 10088 0x4462BE7: dlopen_doit (dlopen.c:67)
+         n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+          n0: 10088 0x0: ???
+    n0: 680 in 1 place, below massif's threshold (01.00%)
+ n0: 8354 in 74 places, all below massif's threshold (01.00%)
+ n2: 6240 0x438BE81: copy_local_string.isra.2 (conf.c:766)
+  n0: 4673 in 124 places, all below massif's threshold (01.00%)
+  n0: 1567 0x61666562: ???
+ n1: 2688 0x401045B: _dl_check_map_versions (dl-version.c:300)
+  n1: 2688 0x4013369: dl_open_worker (dl-open.c:268)
+   n1: 2688 0x400ECBD: _dl_catch_error (dl-error.c:178)
+    n1: 2688 0x4462BE7: dlopen_doit (dlopen.c:67)
+     n1: 2688 0x400ECBD: _dl_catch_error (dl-error.c:178)
+      n0: 2688 0x0: ???
+ n1: 2004 0x408CC68: MidiInApi::MidiInApi(unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+  n0: 2004 0x587409A: ???
+ n1: 1280 0x8076B0F: __gnu_cxx::new_allocator<LetterPattern>::allocate(unsigned int, void const*) (new_allocator.h:92)
+  n1: 1280 0x80769A6: std::_Vector_base<LetterPattern, std::allocator<LetterPattern> >::_M_allocate(unsigned int) (in /home/puppy/NetBeansProjects/RealTimeBeatGenerationThesis/dist/Debug_To_Release/GNU-Linux-x86/realtimebeatgenerationthesis)
+   n1: 1280 0x80765E8: std::vector<LetterPattern, std::allocator<LetterPattern> >::_M_insert_aux(__gnu_cxx::__normal_iterator<LetterPattern*, std::vector<LetterPattern, std::allocator<LetterPattern> > >, LetterPattern const&) (vector.tcc:327)
+    n2: 1280 0x807646B: std::vector<LetterPattern, std::allocator<LetterPattern> >::push_back(LetterPattern const&) (stl_vector.h:834)
+     n1: 1280 0x8075670: Helper::Helper() (Helper.cpp:138)
+      n0: 1280 in 2 places, all below massif's threshold (01.00%)
+     n0: 0 in 5 places, all below massif's threshold (01.00%)
+ n1: 1193 0x58E80D4: pa_xmalloc (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+  n0: 1193 in 20 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=38
+#-----------
+time=124545283
+mem_heap_B=51796
+mem_heap_extra_B=18060
+mem_stacks_B=0
+heap_tree=detailed
+n10: 51796 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 18288 0x438BF00: _snd_config_make (conf.c:902)
+  n5: 18252 0x438BFD7: _snd_config_make_add (conf.c:928)
+   n2: 10656 0x438CBAE: parse_value (conf.c:1022)
+    n3: 8676 0x438EF8C: parse_defs (conf.c:1248)
+     n2: 6552 0x438F251: parse_defs (conf.c:1231)
+      n2: 4500 0x438F251: parse_defs (conf.c:1231)
+       n2: 2268 0x438F251: parse_defs (conf.c:1231)
+        n2: 1620 0x438F58C: snd_config_load1 (conf.c:1661)
+         n1: 1548 0x4393356: snd_config_update (conf.c:3799)
+          n1: 1548 0x440CD0D: snd_seq_open (seq.c:979)
+           n1: 1548 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 1548 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n1: 1548 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+              n0: 1548 0x50731CA: ???
+         n0: 72 in 1 place, below massif's threshold (01.00%)
+        n0: 648 in 1 place, below massif's threshold (01.00%)
+       n2: 2232 0x438F58C: snd_config_load1 (conf.c:1661)
+        n1: 2016 0x4393356: snd_config_update (conf.c:3799)
+         n1: 2016 0x440CD0D: snd_seq_open (seq.c:979)
+          n1: 2016 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 2016 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 2016 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n0: 2016 0x50731CA: ???
+        n0: 216 in 1 place, below massif's threshold (01.00%)
+      n2: 2052 0x438F58C: snd_config_load1 (conf.c:1661)
+       n1: 1728 0x4393356: snd_config_update (conf.c:3799)
+        n1: 1728 0x440CD0D: snd_seq_open (seq.c:979)
+         n1: 1728 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1728 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1728 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n0: 1728 0x50731CA: ???
+       n0: 324 in 1 place, below massif's threshold (01.00%)
+     n1: 1836 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 1836 0x4393356: snd_config_update (conf.c:3799)
+       n1: 1836 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 1836 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 1836 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1836 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 1836 0x50731CA: ???
+     n0: 288 in 1 place, below massif's threshold (01.00%)
+    n1: 1980 0x438F391: parse_array_defs (conf.c:1094)
+     n2: 1980 0x438F023: parse_defs (conf.c:1234)
+      n2: 1872 0x438F251: parse_defs (conf.c:1231)
+       n2: 1080 0x438F58C: snd_config_load1 (conf.c:1661)
+        n1: 1008 0x4393356: snd_config_update (conf.c:3799)
+         n1: 1008 0x440CD0D: snd_seq_open (seq.c:979)
+          n1: 1008 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1008 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 1008 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n0: 1008 0x50731CA: ???
+        n0: 72 in 1 place, below massif's threshold (01.00%)
+       n1: 792 0x438F251: parse_defs (conf.c:1231)
+        n0: 792 in 2 places, all below massif's threshold (01.00%)
+      n0: 108 in 1 place, below massif's threshold (01.00%)
+   n3: 5292 0x438EFFA: parse_defs (conf.c:1225)
+    n2: 4104 0x438F251: parse_defs (conf.c:1231)
+     n2: 2304 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 2052 0x4393356: snd_config_update (conf.c:3799)
+       n1: 2052 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 2052 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 2052 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 2052 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 2052 0x50731CA: ???
+      n0: 252 in 1 place, below massif's threshold (01.00%)
+     n2: 1800 0x438F251: parse_defs (conf.c:1231)
+      n2: 1152 0x438F58C: snd_config_load1 (conf.c:1661)
+       n1: 1116 0x4393356: snd_config_update (conf.c:3799)
+        n1: 1116 0x440CD0D: snd_seq_open (seq.c:979)
+         n1: 1116 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1116 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1116 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n0: 1116 0x50731CA: ???
+       n0: 36 in 1 place, below massif's threshold (01.00%)
+      n0: 648 in 1 place, below massif's threshold (01.00%)
+    n2: 1044 0x438F58C: snd_config_load1 (conf.c:1661)
+     n1: 792 0x4393356: snd_config_update (conf.c:3799)
+      n1: 792 0x440CD0D: snd_seq_open (seq.c:979)
+       n1: 792 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+        n1: 792 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 792 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n0: 792 0x50731CA: ???
+     n0: 252 in 1 place, below massif's threshold (01.00%)
+    n0: 144 in 1 place, below massif's threshold (01.00%)
+   n2: 1224 0x438EEB1: parse_defs (conf.c:1183)
+    n2: 1044 0x438F58C: snd_config_load1 (conf.c:1661)
+     n1: 1008 0x4393356: snd_config_update (conf.c:3799)
+      n1: 1008 0x440CD0D: snd_seq_open (seq.c:979)
+       n1: 1008 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+        n1: 1008 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 1008 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n0: 1008 0x50731CA: ???
+     n0: 36 in 1 place, below massif's threshold (01.00%)
+    n0: 180 in 1 place, below massif's threshold (01.00%)
+   n1: 828 0x438CD16: parse_value (conf.c:1001)
+    n2: 828 0x438EF8C: parse_defs (conf.c:1248)
+     n1: 756 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 756 0x4393356: snd_config_update (conf.c:3799)
+       n1: 756 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 756 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 756 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 756 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 756 0x50731CA: ???
+     n0: 72 in 1 place, below massif's threshold (01.00%)
+   n0: 252 in 1 place, below massif's threshold (01.00%)
+  n0: 36 in 2 places, all below massif's threshold (01.00%)
+ n1: 10088 0x400AE0E: _dl_new_object (dl-object.c:77)
+  n1: 10088 0x4006436: _dl_map_object_from_fd (dl-load.c:1051)
+   n2: 10088 0x400839E: _dl_map_object (dl-load.c:2568)
+    n1: 10088 0x400D166: openaux (dl-deps.c:65)
+     n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+      n1: 10088 0x4012DB8: dl_open_worker (dl-open.c:262)
+       n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+        n1: 10088 0x4462BE7: dlopen_doit (dlopen.c:67)
+         n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+          n0: 10088 0x0: ???
+    n0: 0 in 1 place, below massif's threshold (01.00%)
+ n2: 6224 0x438BE81: copy_local_string.isra.2 (conf.c:766)
+  n0: 4657 in 125 places, all below massif's threshold (01.00%)
+  n0: 1567 0x61666562: ???
+ n0: 5547 in 74 places, all below massif's threshold (01.00%)
+ n2: 4224 0x58E81CC: pa_xmalloc0 (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+  n5: 4224 0x58F910D: pa_flist_new_with_name (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+   n1: 1056 0x58F97B3: ??? (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+    n1: 1056 0x590A97A: pa_run_once (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+     n1: 1056 0x58F9A6C: pa_hashmap_put (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+      n1: 1056 0x58B3177: pa_proplist_sets (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+       n1: 1056 0x5899112: pa_context_new_with_proplist (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+        n1: 1056 0x5899329: pa_context_new (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+         n1: 1056 0x40307F3: ???
+          n1: 1056 0x439212C: snd_config_hooks.constprop.27 (conf.c:3326)
+           n1: 1056 0x43927FF: snd_config_searcha_hooks (conf.c:3127)
+            n1: 1056 0x43928D1: snd_config_searchva_hooks (conf.c:3164)
+             n0: 1056 0x4473756: ???
+   n1: 1056 0x590F8B3: ??? (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+    n1: 1056 0x590A97A: pa_run_once (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+     n1: 1056 0x590FDB6: pa_pstream_send_packet (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+      n1: 1056 0x590F572: pa_pstream_send_tagstruct_with_creds (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+       n1: 1056 0x589C9B6: ??? (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+        n1: 1056 0x59151D5: ??? (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+         n1: 1056 0x58B1C7E: pa_mainloop_dispatch (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+          n1: 1056 0x58B1FC1: pa_mainloop_iterate (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+           n1: 1056 0x4030846: ???
+            n1: 1056 0x439212C: snd_config_hooks.constprop.27 (conf.c:3326)
+             n1: 1056 0x43927FF: snd_config_searcha_hooks (conf.c:3127)
+              n1: 1056 0x43928D1: snd_config_searchva_hooks (conf.c:3164)
+               n0: 1056 0x4473756: ???
+   n1: 1056 0x5912793: ??? (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+    n1: 1056 0x590A97A: pa_run_once (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+     n1: 1056 0x5912828: pa_queue_push (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+      n1: 1056 0x590FE09: pa_pstream_send_packet (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+       n1: 1056 0x590F572: pa_pstream_send_tagstruct_with_creds (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+        n1: 1056 0x589C9B6: ??? (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+         n1: 1056 0x59151D5: ??? (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+          n1: 1056 0x58B1C7E: pa_mainloop_dispatch (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+           n1: 1056 0x58B1FC1: pa_mainloop_iterate (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+            n1: 1056 0x4030846: ???
+             n1: 1056 0x439212C: snd_config_hooks.constprop.27 (conf.c:3326)
+              n1: 1056 0x43927FF: snd_config_searcha_hooks (conf.c:3127)
+               n1: 1056 0x43928D1: snd_config_searchva_hooks (conf.c:3164)
+                n0: 1056 0x4473756: ???
+   n1: 1056 0x590B523: ??? (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+    n1: 1056 0x590A97A: pa_run_once (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+     n1: 1056 0x590B6D3: pa_pdispatch_register_reply (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+      n1: 1056 0x589C9E7: ??? (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+       n1: 1056 0x59151D5: ??? (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+        n1: 1056 0x58B1C7E: pa_mainloop_dispatch (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+         n1: 1056 0x58B1FC1: pa_mainloop_iterate (in /usr/lib/i386-linux-gnu/libpulse.so.0.13.5)
+          n1: 1056 0x4030846: ???
+           n1: 1056 0x439212C: snd_config_hooks.constprop.27 (conf.c:3326)
+            n1: 1056 0x43927FF: snd_config_searcha_hooks (conf.c:3127)
+             n1: 1056 0x43928D1: snd_config_searchva_hooks (conf.c:3164)
+              n0: 1056 0x4473756: ???
+   n0: 0 in 1 place, below massif's threshold (01.00%)
+  n0: 0 in 4 places, all below massif's threshold (01.00%)
+ n1: 2592 0x401045B: _dl_check_map_versions (dl-version.c:300)
+  n1: 2592 0x4013369: dl_open_worker (dl-open.c:268)
+   n1: 2592 0x400ECBD: _dl_catch_error (dl-error.c:178)
+    n1: 2592 0x4462BE7: dlopen_doit (dlopen.c:67)
+     n1: 2592 0x400ECBD: _dl_catch_error (dl-error.c:178)
+      n0: 2592 0x0: ???
+ n1: 2004 0x408CC68: MidiInApi::MidiInApi(unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+  n0: 2004 0x587409A: ???
+ n1: 1280 0x8076B0F: __gnu_cxx::new_allocator<LetterPattern>::allocate(unsigned int, void const*) (new_allocator.h:92)
+  n1: 1280 0x80769A6: std::_Vector_base<LetterPattern, std::allocator<LetterPattern> >::_M_allocate(unsigned int) (in /home/puppy/NetBeansProjects/RealTimeBeatGenerationThesis/dist/Debug_To_Release/GNU-Linux-x86/realtimebeatgenerationthesis)
+   n1: 1280 0x80765E8: std::vector<LetterPattern, std::allocator<LetterPattern> >::_M_insert_aux(__gnu_cxx::__normal_iterator<LetterPattern*, std::vector<LetterPattern, std::allocator<LetterPattern> > >, LetterPattern const&) (vector.tcc:327)
+    n2: 1280 0x807646B: std::vector<LetterPattern, std::allocator<LetterPattern> >::push_back(LetterPattern const&) (stl_vector.h:834)
+     n1: 1280 0x8075670: Helper::Helper() (Helper.cpp:138)
+      n0: 1280 in 2 places, all below massif's threshold (01.00%)
+     n0: 0 in 5 places, all below massif's threshold (01.00%)
+ n1: 821 0x41267D2: std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&) (in /usr/lib/i386-linux-gnu/libstdc++.so.6.0.16)
+  n1: 821 0x4128A46: char* std::string::_S_construct<char const*>(char const*, char const*, std::allocator<char> const&, std::forward_iterator_tag) (in /usr/lib/i386-linux-gnu/libstdc++.so.6.0.16)
+   n1: 821 0x4128BB4: std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&) (in /usr/lib/i386-linux-gnu/libstdc++.so.6.0.16)
+    n0: 821 in 6 places, all below massif's threshold (01.00%)
+ n1: 728 0x426FE27: __tzfile_read (tzfile.c:292)
+  n1: 728 0x426F67D: tzset_internal (tzset.c:439)
+   n1: 728 0x426F950: __tz_convert (tzset.c:624)
+    n1: 728 0x426E049: localtime_r (localtime.c:33)
+     n1: 728 0x8063492: boost::date_time::microsec_clock<boost::posix_time::ptime>::create_time(tm* (*)(long const*, tm*)) (microsec_time_clock.hpp:100)
+      n1: 728 0x8062AB1: boost::date_time::microsec_clock<boost::posix_time::ptime>::local_time() (microsec_time_clock.hpp:70)
+       n1: 728 0x807B354: RealTimeIOMain::RealTimeIOMain() (RealTimeIOMain.cpp:38)
+        n0: 728 0x806E873: main (main.cpp:51)
+#-----------
+snapshot=39
+#-----------
+time=128149000
+mem_heap_B=51879
+mem_heap_extra_B=18121
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=130652577
+mem_heap_B=112857
+mem_heap_extra_B=18151
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=134220899
+mem_heap_B=112884
+mem_heap_extra_B=18164
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=139040647
+mem_heap_B=113409
+mem_heap_extra_B=18175
+mem_stacks_B=0
+heap_tree=detailed
+n9: 113409 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 32768 0x440C12D: snd_seq_hw_open (seq_hw.c:484)
+  n1: 32768 0x440C400: _snd_seq_hw_open (seq_hw.c:555)
+   n1: 32768 0x440C665: snd_seq_open_conf (seq.c:918)
+    n1: 32768 0x440CB06: snd_seq_open_noupdate (seq.c:939)
+     n2: 32768 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+      n1: 16384 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n1: 16384 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+        n0: 16384 0x50731CA: ???
+      n1: 16384 0x408D843: MidiInAlsa::MidiInAlsa(std::string, unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n0: 16384 0x587409A: ???
+ n1: 28000 0x440C17D: snd_seq_hw_open (seq_hw.c:493)
+  n1: 28000 0x440C400: _snd_seq_hw_open (seq_hw.c:555)
+   n1: 28000 0x440C665: snd_seq_open_conf (seq.c:918)
+    n1: 28000 0x440CB06: snd_seq_open_noupdate (seq.c:939)
+     n2: 28000 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+      n1: 14000 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n1: 14000 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+        n0: 14000 0x50731CA: ???
+      n1: 14000 0x408D843: MidiInAlsa::MidiInAlsa(std::string, unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n0: 14000 0x587409A: ???
+ n2: 18288 0x438BF00: _snd_config_make (conf.c:902)
+  n3: 18252 0x438BFD7: _snd_config_make_add (conf.c:928)
+   n2: 10656 0x438CBAE: parse_value (conf.c:1022)
+    n3: 8676 0x438EF8C: parse_defs (conf.c:1248)
+     n2: 6552 0x438F251: parse_defs (conf.c:1231)
+      n2: 4500 0x438F251: parse_defs (conf.c:1231)
+       n2: 2268 0x438F251: parse_defs (conf.c:1231)
+        n2: 1620 0x438F58C: snd_config_load1 (conf.c:1661)
+         n1: 1548 0x4393356: snd_config_update (conf.c:3799)
+          n1: 1548 0x440CD0D: snd_seq_open (seq.c:979)
+           n1: 1548 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 1548 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n1: 1548 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+              n0: 1548 0x50731CA: ???
+         n0: 72 in 1 place, below massif's threshold (01.00%)
+        n0: 648 in 1 place, below massif's threshold (01.00%)
+       n2: 2232 0x438F58C: snd_config_load1 (conf.c:1661)
+        n1: 2016 0x4393356: snd_config_update (conf.c:3799)
+         n1: 2016 0x440CD0D: snd_seq_open (seq.c:979)
+          n1: 2016 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 2016 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 2016 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n0: 2016 0x50731CA: ???
+        n0: 216 in 1 place, below massif's threshold (01.00%)
+      n2: 2052 0x438F58C: snd_config_load1 (conf.c:1661)
+       n1: 1728 0x4393356: snd_config_update (conf.c:3799)
+        n1: 1728 0x440CD0D: snd_seq_open (seq.c:979)
+         n1: 1728 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1728 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1728 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n0: 1728 0x50731CA: ???
+       n0: 324 in 1 place, below massif's threshold (01.00%)
+     n1: 1836 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 1836 0x4393356: snd_config_update (conf.c:3799)
+       n1: 1836 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 1836 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 1836 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1836 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 1836 0x50731CA: ???
+     n0: 288 in 1 place, below massif's threshold (01.00%)
+    n1: 1980 0x438F391: parse_array_defs (conf.c:1094)
+     n2: 1980 0x438F023: parse_defs (conf.c:1234)
+      n1: 1872 0x438F251: parse_defs (conf.c:1231)
+       n0: 1872 in 2 places, all below massif's threshold (01.00%)
+      n0: 108 in 1 place, below massif's threshold (01.00%)
+   n2: 5292 0x438EFFA: parse_defs (conf.c:1225)
+    n2: 4104 0x438F251: parse_defs (conf.c:1231)
+     n2: 2304 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 2052 0x4393356: snd_config_update (conf.c:3799)
+       n1: 2052 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 2052 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 2052 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 2052 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 2052 0x50731CA: ???
+      n0: 252 in 1 place, below massif's threshold (01.00%)
+     n1: 1800 0x438F251: parse_defs (conf.c:1231)
+      n0: 1800 in 2 places, all below massif's threshold (01.00%)
+    n0: 1188 in 2 places, all below massif's threshold (01.00%)
+   n0: 2304 in 3 places, all below massif's threshold (01.00%)
+  n0: 36 in 2 places, all below massif's threshold (01.00%)
+ n1: 10088 0x400AE0E: _dl_new_object (dl-object.c:77)
+  n1: 10088 0x4006436: _dl_map_object_from_fd (dl-load.c:1051)
+   n2: 10088 0x400839E: _dl_map_object (dl-load.c:2568)
+    n1: 10088 0x400D166: openaux (dl-deps.c:65)
+     n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+      n1: 10088 0x4012DB8: dl_open_worker (dl-open.c:262)
+       n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+        n1: 10088 0x4462BE7: dlopen_doit (dlopen.c:67)
+         n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+          n0: 10088 0x0: ???
+    n0: 0 in 1 place, below massif's threshold (01.00%)
+ n0: 9221 in 84 places, all below massif's threshold (01.00%)
+ n2: 6224 0x438BE81: copy_local_string.isra.2 (conf.c:766)
+  n0: 4657 in 125 places, all below massif's threshold (01.00%)
+  n0: 1567 0x61666562: ???
+ n2: 4224 0x58E81CC: pa_xmalloc0 (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+  n1: 4224 0x58F910D: pa_flist_new_with_name (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+   n0: 4224 in 5 places, all below massif's threshold (01.00%)
+  n0: 0 in 4 places, all below massif's threshold (01.00%)
+ n1: 2592 0x401045B: _dl_check_map_versions (dl-version.c:300)
+  n1: 2592 0x4013369: dl_open_worker (dl-open.c:268)
+   n1: 2592 0x400ECBD: _dl_catch_error (dl-error.c:178)
+    n1: 2592 0x4462BE7: dlopen_doit (dlopen.c:67)
+     n1: 2592 0x400ECBD: _dl_catch_error (dl-error.c:178)
+      n0: 2592 0x0: ???
+ n1: 2004 0x408CC68: MidiInApi::MidiInApi(unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+  n0: 2004 0x587409A: ???
+#-----------
+snapshot=43
+#-----------
+time=139085970
+mem_heap_B=112986
+mem_heap_extra_B=18190
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=142704830
+mem_heap_B=112960
+mem_heap_extra_B=18168
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=142706692
+mem_heap_B=112962
+mem_heap_extra_B=18182
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=151119860
+mem_heap_B=112966
+mem_heap_extra_B=18194
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=502548904
+mem_heap_B=112972
+mem_heap_extra_B=18188
+mem_stacks_B=0
+heap_tree=detailed
+n9: 112972 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 32768 0x440C12D: snd_seq_hw_open (seq_hw.c:484)
+  n1: 32768 0x440C400: _snd_seq_hw_open (seq_hw.c:555)
+   n1: 32768 0x440C665: snd_seq_open_conf (seq.c:918)
+    n1: 32768 0x440CB06: snd_seq_open_noupdate (seq.c:939)
+     n2: 32768 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+      n1: 16384 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n1: 16384 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+        n0: 16384 0x50731CA: ???
+      n1: 16384 0x408D843: MidiInAlsa::MidiInAlsa(std::string, unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n0: 16384 0x587409A: ???
+ n1: 28000 0x440C17D: snd_seq_hw_open (seq_hw.c:493)
+  n1: 28000 0x440C400: _snd_seq_hw_open (seq_hw.c:555)
+   n1: 28000 0x440C665: snd_seq_open_conf (seq.c:918)
+    n1: 28000 0x440CB06: snd_seq_open_noupdate (seq.c:939)
+     n2: 28000 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+      n1: 14000 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n1: 14000 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+        n0: 14000 0x50731CA: ???
+      n1: 14000 0x408D843: MidiInAlsa::MidiInAlsa(std::string, unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n0: 14000 0x587409A: ???
+ n2: 18288 0x438BF00: _snd_config_make (conf.c:902)
+  n3: 18252 0x438BFD7: _snd_config_make_add (conf.c:928)
+   n2: 10656 0x438CBAE: parse_value (conf.c:1022)
+    n3: 8676 0x438EF8C: parse_defs (conf.c:1248)
+     n2: 6552 0x438F251: parse_defs (conf.c:1231)
+      n2: 4500 0x438F251: parse_defs (conf.c:1231)
+       n2: 2268 0x438F251: parse_defs (conf.c:1231)
+        n2: 1620 0x438F58C: snd_config_load1 (conf.c:1661)
+         n1: 1548 0x4393356: snd_config_update (conf.c:3799)
+          n1: 1548 0x440CD0D: snd_seq_open (seq.c:979)
+           n1: 1548 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 1548 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n1: 1548 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+              n0: 1548 0x50731CA: ???
+         n0: 72 in 1 place, below massif's threshold (01.00%)
+        n0: 648 in 1 place, below massif's threshold (01.00%)
+       n2: 2232 0x438F58C: snd_config_load1 (conf.c:1661)
+        n1: 2016 0x4393356: snd_config_update (conf.c:3799)
+         n1: 2016 0x440CD0D: snd_seq_open (seq.c:979)
+          n1: 2016 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 2016 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 2016 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n0: 2016 0x50731CA: ???
+        n0: 216 in 1 place, below massif's threshold (01.00%)
+      n2: 2052 0x438F58C: snd_config_load1 (conf.c:1661)
+       n1: 1728 0x4393356: snd_config_update (conf.c:3799)
+        n1: 1728 0x440CD0D: snd_seq_open (seq.c:979)
+         n1: 1728 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1728 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1728 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n0: 1728 0x50731CA: ???
+       n0: 324 in 1 place, below massif's threshold (01.00%)
+     n1: 1836 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 1836 0x4393356: snd_config_update (conf.c:3799)
+       n1: 1836 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 1836 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 1836 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1836 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 1836 0x50731CA: ???
+     n0: 288 in 1 place, below massif's threshold (01.00%)
+    n1: 1980 0x438F391: parse_array_defs (conf.c:1094)
+     n2: 1980 0x438F023: parse_defs (conf.c:1234)
+      n1: 1872 0x438F251: parse_defs (conf.c:1231)
+       n0: 1872 in 2 places, all below massif's threshold (01.00%)
+      n0: 108 in 1 place, below massif's threshold (01.00%)
+   n2: 5292 0x438EFFA: parse_defs (conf.c:1225)
+    n2: 4104 0x438F251: parse_defs (conf.c:1231)
+     n2: 2304 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 2052 0x4393356: snd_config_update (conf.c:3799)
+       n1: 2052 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 2052 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 2052 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 2052 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 2052 0x50731CA: ???
+      n0: 252 in 1 place, below massif's threshold (01.00%)
+     n1: 1800 0x438F251: parse_defs (conf.c:1231)
+      n0: 1800 in 2 places, all below massif's threshold (01.00%)
+    n0: 1188 in 2 places, all below massif's threshold (01.00%)
+   n0: 2304 in 3 places, all below massif's threshold (01.00%)
+  n0: 36 in 2 places, all below massif's threshold (01.00%)
+ n1: 10088 0x400AE0E: _dl_new_object (dl-object.c:77)
+  n1: 10088 0x4006436: _dl_map_object_from_fd (dl-load.c:1051)
+   n2: 10088 0x400839E: _dl_map_object (dl-load.c:2568)
+    n1: 10088 0x400D166: openaux (dl-deps.c:65)
+     n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+      n1: 10088 0x4012DB8: dl_open_worker (dl-open.c:262)
+       n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+        n1: 10088 0x4462BE7: dlopen_doit (dlopen.c:67)
+         n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+          n0: 10088 0x0: ???
+    n0: 0 in 1 place, below massif's threshold (01.00%)
+ n0: 8784 in 87 places, all below massif's threshold (01.00%)
+ n2: 6224 0x438BE81: copy_local_string.isra.2 (conf.c:766)
+  n0: 4657 in 125 places, all below massif's threshold (01.00%)
+  n0: 1567 0x61666562: ???
+ n2: 4224 0x58E81CC: pa_xmalloc0 (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+  n1: 4224 0x58F910D: pa_flist_new_with_name (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+   n0: 4224 in 5 places, all below massif's threshold (01.00%)
+  n0: 0 in 4 places, all below massif's threshold (01.00%)
+ n1: 2592 0x401045B: _dl_check_map_versions (dl-version.c:300)
+  n1: 2592 0x4013369: dl_open_worker (dl-open.c:268)
+   n1: 2592 0x400ECBD: _dl_catch_error (dl-error.c:178)
+    n1: 2592 0x4462BE7: dlopen_doit (dlopen.c:67)
+     n1: 2592 0x400ECBD: _dl_catch_error (dl-error.c:178)
+      n0: 2592 0x0: ???
+ n1: 2004 0x408CC68: MidiInApi::MidiInApi(unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+  n0: 2004 0x587409A: ???
+#-----------
+snapshot=48
+#-----------
+time=502637904
+mem_heap_B=114435
+mem_heap_extra_B=19317
+mem_stacks_B=0
+heap_tree=detailed
+n10: 114435 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 32768 0x440C12D: snd_seq_hw_open (seq_hw.c:484)
+  n1: 32768 0x440C400: _snd_seq_hw_open (seq_hw.c:555)
+   n1: 32768 0x440C665: snd_seq_open_conf (seq.c:918)
+    n1: 32768 0x440CB06: snd_seq_open_noupdate (seq.c:939)
+     n2: 32768 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+      n1: 16384 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n1: 16384 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+        n0: 16384 0x50731CA: ???
+      n1: 16384 0x408D843: MidiInAlsa::MidiInAlsa(std::string, unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n0: 16384 0x587409A: ???
+ n1: 28000 0x440C17D: snd_seq_hw_open (seq_hw.c:493)
+  n1: 28000 0x440C400: _snd_seq_hw_open (seq_hw.c:555)
+   n1: 28000 0x440C665: snd_seq_open_conf (seq.c:918)
+    n1: 28000 0x440CB06: snd_seq_open_noupdate (seq.c:939)
+     n2: 28000 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+      n1: 14000 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n1: 14000 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+        n0: 14000 0x50731CA: ???
+      n1: 14000 0x408D843: MidiInAlsa::MidiInAlsa(std::string, unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n0: 14000 0x587409A: ???
+ n2: 18288 0x438BF00: _snd_config_make (conf.c:902)
+  n3: 18252 0x438BFD7: _snd_config_make_add (conf.c:928)
+   n2: 10656 0x438CBAE: parse_value (conf.c:1022)
+    n3: 8676 0x438EF8C: parse_defs (conf.c:1248)
+     n2: 6552 0x438F251: parse_defs (conf.c:1231)
+      n2: 4500 0x438F251: parse_defs (conf.c:1231)
+       n2: 2268 0x438F251: parse_defs (conf.c:1231)
+        n2: 1620 0x438F58C: snd_config_load1 (conf.c:1661)
+         n1: 1548 0x4393356: snd_config_update (conf.c:3799)
+          n1: 1548 0x440CD0D: snd_seq_open (seq.c:979)
+           n1: 1548 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 1548 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n1: 1548 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+              n0: 1548 0x50731CA: ???
+         n0: 72 in 1 place, below massif's threshold (01.00%)
+        n0: 648 in 1 place, below massif's threshold (01.00%)
+       n2: 2232 0x438F58C: snd_config_load1 (conf.c:1661)
+        n1: 2016 0x4393356: snd_config_update (conf.c:3799)
+         n1: 2016 0x440CD0D: snd_seq_open (seq.c:979)
+          n1: 2016 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 2016 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 2016 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n0: 2016 0x50731CA: ???
+        n0: 216 in 1 place, below massif's threshold (01.00%)
+      n2: 2052 0x438F58C: snd_config_load1 (conf.c:1661)
+       n1: 1728 0x4393356: snd_config_update (conf.c:3799)
+        n1: 1728 0x440CD0D: snd_seq_open (seq.c:979)
+         n1: 1728 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1728 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1728 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n0: 1728 0x50731CA: ???
+       n0: 324 in 1 place, below massif's threshold (01.00%)
+     n1: 1836 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 1836 0x4393356: snd_config_update (conf.c:3799)
+       n1: 1836 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 1836 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 1836 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1836 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 1836 0x50731CA: ???
+     n0: 288 in 1 place, below massif's threshold (01.00%)
+    n1: 1980 0x438F391: parse_array_defs (conf.c:1094)
+     n2: 1980 0x438F023: parse_defs (conf.c:1234)
+      n1: 1872 0x438F251: parse_defs (conf.c:1231)
+       n0: 1872 in 2 places, all below massif's threshold (01.00%)
+      n0: 108 in 1 place, below massif's threshold (01.00%)
+   n2: 5292 0x438EFFA: parse_defs (conf.c:1225)
+    n2: 4104 0x438F251: parse_defs (conf.c:1231)
+     n2: 2304 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 2052 0x4393356: snd_config_update (conf.c:3799)
+       n1: 2052 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 2052 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 2052 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 2052 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 2052 0x50731CA: ???
+      n0: 252 in 1 place, below massif's threshold (01.00%)
+     n1: 1800 0x438F251: parse_defs (conf.c:1231)
+      n0: 1800 in 2 places, all below massif's threshold (01.00%)
+    n0: 1188 in 2 places, all below massif's threshold (01.00%)
+   n0: 2304 in 3 places, all below massif's threshold (01.00%)
+  n0: 36 in 2 places, all below massif's threshold (01.00%)
+ n1: 10088 0x400AE0E: _dl_new_object (dl-object.c:77)
+  n1: 10088 0x4006436: _dl_map_object_from_fd (dl-load.c:1051)
+   n2: 10088 0x400839E: _dl_map_object (dl-load.c:2568)
+    n1: 10088 0x400D166: openaux (dl-deps.c:65)
+     n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+      n1: 10088 0x4012DB8: dl_open_worker (dl-open.c:262)
+       n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+        n1: 10088 0x4462BE7: dlopen_doit (dlopen.c:67)
+         n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+          n0: 10088 0x0: ???
+    n0: 0 in 1 place, below massif's threshold (01.00%)
+ n0: 8907 in 89 places, all below massif's threshold (01.00%)
+ n2: 6224 0x438BE81: copy_local_string.isra.2 (conf.c:766)
+  n0: 4657 in 125 places, all below massif's threshold (01.00%)
+  n0: 1567 0x61666562: ???
+ n2: 4224 0x58E81CC: pa_xmalloc0 (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+  n1: 4224 0x58F910D: pa_flist_new_with_name (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+   n0: 4224 in 5 places, all below massif's threshold (01.00%)
+  n0: 0 in 4 places, all below massif's threshold (01.00%)
+ n1: 2592 0x401045B: _dl_check_map_versions (dl-version.c:300)
+  n1: 2592 0x4013369: dl_open_worker (dl-open.c:268)
+   n1: 2592 0x400ECBD: _dl_catch_error (dl-error.c:178)
+    n1: 2592 0x4462BE7: dlopen_doit (dlopen.c:67)
+     n1: 2592 0x400ECBD: _dl_catch_error (dl-error.c:178)
+      n0: 2592 0x0: ???
+ n1: 2004 0x408CC68: MidiInApi::MidiInApi(unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+  n0: 2004 0x587409A: ???
+ n1: 1340 0x8076B0F: __gnu_cxx::new_allocator<LetterPattern>::allocate(unsigned int, void const*) (new_allocator.h:92)
+  n1: 1340 0x80769A6: std::_Vector_base<LetterPattern, std::allocator<LetterPattern> >::_M_allocate(unsigned int) (in /home/puppy/NetBeansProjects/RealTimeBeatGenerationThesis/dist/Debug_To_Release/GNU-Linux-x86/realtimebeatgenerationthesis)
+   n1: 1340 0x80765E8: std::vector<LetterPattern, std::allocator<LetterPattern> >::_M_insert_aux(__gnu_cxx::__normal_iterator<LetterPattern*, std::vector<LetterPattern, std::allocator<LetterPattern> > >, LetterPattern const&) (vector.tcc:327)
+    n1: 1340 0x807646B: std::vector<LetterPattern, std::allocator<LetterPattern> >::push_back(LetterPattern const&) (stl_vector.h:834)
+     n0: 1340 in 8 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=49
+#-----------
+time=502650403
+mem_heap_B=114911
+mem_heap_extra_B=19401
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=502652179
+mem_heap_B=114931
+mem_heap_extra_B=19429
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=502654014
+mem_heap_B=114943
+mem_heap_extra_B=19433
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=502655631
+mem_heap_B=114899
+mem_heap_extra_B=19357
+mem_stacks_B=0
+heap_tree=detailed
+n10: 114899 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 32768 0x440C12D: snd_seq_hw_open (seq_hw.c:484)
+  n1: 32768 0x440C400: _snd_seq_hw_open (seq_hw.c:555)
+   n1: 32768 0x440C665: snd_seq_open_conf (seq.c:918)
+    n1: 32768 0x440CB06: snd_seq_open_noupdate (seq.c:939)
+     n2: 32768 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+      n1: 16384 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n1: 16384 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+        n0: 16384 0x50731CA: ???
+      n1: 16384 0x408D843: MidiInAlsa::MidiInAlsa(std::string, unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n0: 16384 0x587409A: ???
+ n1: 28000 0x440C17D: snd_seq_hw_open (seq_hw.c:493)
+  n1: 28000 0x440C400: _snd_seq_hw_open (seq_hw.c:555)
+   n1: 28000 0x440C665: snd_seq_open_conf (seq.c:918)
+    n1: 28000 0x440CB06: snd_seq_open_noupdate (seq.c:939)
+     n2: 28000 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+      n1: 14000 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n1: 14000 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+        n0: 14000 0x50731CA: ???
+      n1: 14000 0x408D843: MidiInAlsa::MidiInAlsa(std::string, unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n0: 14000 0x587409A: ???
+ n2: 18288 0x438BF00: _snd_config_make (conf.c:902)
+  n3: 18252 0x438BFD7: _snd_config_make_add (conf.c:928)
+   n2: 10656 0x438CBAE: parse_value (conf.c:1022)
+    n3: 8676 0x438EF8C: parse_defs (conf.c:1248)
+     n2: 6552 0x438F251: parse_defs (conf.c:1231)
+      n2: 4500 0x438F251: parse_defs (conf.c:1231)
+       n2: 2268 0x438F251: parse_defs (conf.c:1231)
+        n2: 1620 0x438F58C: snd_config_load1 (conf.c:1661)
+         n1: 1548 0x4393356: snd_config_update (conf.c:3799)
+          n1: 1548 0x440CD0D: snd_seq_open (seq.c:979)
+           n1: 1548 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 1548 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n1: 1548 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+              n0: 1548 0x50731CA: ???
+         n0: 72 in 1 place, below massif's threshold (01.00%)
+        n0: 648 in 1 place, below massif's threshold (01.00%)
+       n2: 2232 0x438F58C: snd_config_load1 (conf.c:1661)
+        n1: 2016 0x4393356: snd_config_update (conf.c:3799)
+         n1: 2016 0x440CD0D: snd_seq_open (seq.c:979)
+          n1: 2016 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 2016 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 2016 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n0: 2016 0x50731CA: ???
+        n0: 216 in 1 place, below massif's threshold (01.00%)
+      n2: 2052 0x438F58C: snd_config_load1 (conf.c:1661)
+       n1: 1728 0x4393356: snd_config_update (conf.c:3799)
+        n1: 1728 0x440CD0D: snd_seq_open (seq.c:979)
+         n1: 1728 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1728 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1728 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n0: 1728 0x50731CA: ???
+       n0: 324 in 1 place, below massif's threshold (01.00%)
+     n1: 1836 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 1836 0x4393356: snd_config_update (conf.c:3799)
+       n1: 1836 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 1836 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 1836 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1836 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 1836 0x50731CA: ???
+     n0: 288 in 1 place, below massif's threshold (01.00%)
+    n1: 1980 0x438F391: parse_array_defs (conf.c:1094)
+     n2: 1980 0x438F023: parse_defs (conf.c:1234)
+      n1: 1872 0x438F251: parse_defs (conf.c:1231)
+       n0: 1872 in 2 places, all below massif's threshold (01.00%)
+      n0: 108 in 1 place, below massif's threshold (01.00%)
+   n2: 5292 0x438EFFA: parse_defs (conf.c:1225)
+    n2: 4104 0x438F251: parse_defs (conf.c:1231)
+     n2: 2304 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 2052 0x4393356: snd_config_update (conf.c:3799)
+       n1: 2052 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 2052 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 2052 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 2052 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 2052 0x50731CA: ???
+      n0: 252 in 1 place, below massif's threshold (01.00%)
+     n1: 1800 0x438F251: parse_defs (conf.c:1231)
+      n0: 1800 in 2 places, all below massif's threshold (01.00%)
+    n0: 1188 in 2 places, all below massif's threshold (01.00%)
+   n0: 2304 in 3 places, all below massif's threshold (01.00%)
+  n0: 36 in 2 places, all below massif's threshold (01.00%)
+ n1: 10088 0x400AE0E: _dl_new_object (dl-object.c:77)
+  n1: 10088 0x4006436: _dl_map_object_from_fd (dl-load.c:1051)
+   n2: 10088 0x400839E: _dl_map_object (dl-load.c:2568)
+    n1: 10088 0x400D166: openaux (dl-deps.c:65)
+     n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+      n1: 10088 0x4012DB8: dl_open_worker (dl-open.c:262)
+       n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+        n1: 10088 0x4462BE7: dlopen_doit (dlopen.c:67)
+         n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+          n0: 10088 0x0: ???
+    n0: 0 in 1 place, below massif's threshold (01.00%)
+ n0: 8951 in 89 places, all below massif's threshold (01.00%)
+ n2: 6224 0x438BE81: copy_local_string.isra.2 (conf.c:766)
+  n0: 4657 in 125 places, all below massif's threshold (01.00%)
+  n0: 1567 0x61666562: ???
+ n2: 4224 0x58E81CC: pa_xmalloc0 (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+  n1: 4224 0x58F910D: pa_flist_new_with_name (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+   n0: 4224 in 5 places, all below massif's threshold (01.00%)
+  n0: 0 in 4 places, all below massif's threshold (01.00%)
+ n1: 2592 0x401045B: _dl_check_map_versions (dl-version.c:300)
+  n1: 2592 0x4013369: dl_open_worker (dl-open.c:268)
+   n1: 2592 0x400ECBD: _dl_catch_error (dl-error.c:178)
+    n1: 2592 0x4462BE7: dlopen_doit (dlopen.c:67)
+     n1: 2592 0x400ECBD: _dl_catch_error (dl-error.c:178)
+      n0: 2592 0x0: ???
+ n1: 2004 0x408CC68: MidiInApi::MidiInApi(unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+  n0: 2004 0x587409A: ???
+ n1: 1760 0x8076B0F: __gnu_cxx::new_allocator<LetterPattern>::allocate(unsigned int, void const*) (new_allocator.h:92)
+  n1: 1760 0x80769A6: std::_Vector_base<LetterPattern, std::allocator<LetterPattern> >::_M_allocate(unsigned int) (in /home/puppy/NetBeansProjects/RealTimeBeatGenerationThesis/dist/Debug_To_Release/GNU-Linux-x86/realtimebeatgenerationthesis)
+   n1: 1760 0x80765E8: std::vector<LetterPattern, std::allocator<LetterPattern> >::_M_insert_aux(__gnu_cxx::__normal_iterator<LetterPattern*, std::vector<LetterPattern, std::allocator<LetterPattern> > >, LetterPattern const&) (vector.tcc:327)
+    n1: 1760 0x807646B: std::vector<LetterPattern, std::allocator<LetterPattern> >::push_back(LetterPattern const&) (stl_vector.h:834)
+     n0: 1760 in 11 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=53
+#-----------
+time=502657263
+mem_heap_B=114771
+mem_heap_extra_B=19381
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=502659081
+mem_heap_B=114811
+mem_heap_extra_B=19413
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=502660648
+mem_heap_B=115459
+mem_heap_extra_B=19445
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=502662488
+mem_heap_B=115471
+mem_heap_extra_B=19481
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=502664264
+mem_heap_B=115491
+mem_heap_extra_B=19509
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=502666040
+mem_heap_B=115515
+mem_heap_extra_B=19533
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=502667818
+mem_heap_B=115547
+mem_heap_extra_B=19565
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=502669600
+mem_heap_B=115587
+mem_heap_extra_B=19597
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=502670845
+mem_heap_B=115591
+mem_heap_extra_B=19609
+mem_stacks_B=0
+heap_tree=detailed
+n10: 115591 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 32768 0x440C12D: snd_seq_hw_open (seq_hw.c:484)
+  n1: 32768 0x440C400: _snd_seq_hw_open (seq_hw.c:555)
+   n1: 32768 0x440C665: snd_seq_open_conf (seq.c:918)
+    n1: 32768 0x440CB06: snd_seq_open_noupdate (seq.c:939)
+     n2: 32768 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+      n1: 16384 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n1: 16384 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+        n0: 16384 0x50731CA: ???
+      n1: 16384 0x408D843: MidiInAlsa::MidiInAlsa(std::string, unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n0: 16384 0x587409A: ???
+ n1: 28000 0x440C17D: snd_seq_hw_open (seq_hw.c:493)
+  n1: 28000 0x440C400: _snd_seq_hw_open (seq_hw.c:555)
+   n1: 28000 0x440C665: snd_seq_open_conf (seq.c:918)
+    n1: 28000 0x440CB06: snd_seq_open_noupdate (seq.c:939)
+     n2: 28000 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+      n1: 14000 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n1: 14000 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+        n0: 14000 0x50731CA: ???
+      n1: 14000 0x408D843: MidiInAlsa::MidiInAlsa(std::string, unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n0: 14000 0x587409A: ???
+ n2: 18288 0x438BF00: _snd_config_make (conf.c:902)
+  n3: 18252 0x438BFD7: _snd_config_make_add (conf.c:928)
+   n2: 10656 0x438CBAE: parse_value (conf.c:1022)
+    n3: 8676 0x438EF8C: parse_defs (conf.c:1248)
+     n2: 6552 0x438F251: parse_defs (conf.c:1231)
+      n2: 4500 0x438F251: parse_defs (conf.c:1231)
+       n2: 2268 0x438F251: parse_defs (conf.c:1231)
+        n2: 1620 0x438F58C: snd_config_load1 (conf.c:1661)
+         n1: 1548 0x4393356: snd_config_update (conf.c:3799)
+          n1: 1548 0x440CD0D: snd_seq_open (seq.c:979)
+           n1: 1548 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 1548 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n1: 1548 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+              n0: 1548 0x50731CA: ???
+         n0: 72 in 1 place, below massif's threshold (01.00%)
+        n0: 648 in 1 place, below massif's threshold (01.00%)
+       n2: 2232 0x438F58C: snd_config_load1 (conf.c:1661)
+        n1: 2016 0x4393356: snd_config_update (conf.c:3799)
+         n1: 2016 0x440CD0D: snd_seq_open (seq.c:979)
+          n1: 2016 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 2016 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 2016 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n0: 2016 0x50731CA: ???
+        n0: 216 in 1 place, below massif's threshold (01.00%)
+      n2: 2052 0x438F58C: snd_config_load1 (conf.c:1661)
+       n1: 1728 0x4393356: snd_config_update (conf.c:3799)
+        n1: 1728 0x440CD0D: snd_seq_open (seq.c:979)
+         n1: 1728 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1728 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1728 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n0: 1728 0x50731CA: ???
+       n0: 324 in 1 place, below massif's threshold (01.00%)
+     n1: 1836 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 1836 0x4393356: snd_config_update (conf.c:3799)
+       n1: 1836 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 1836 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 1836 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1836 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 1836 0x50731CA: ???
+     n0: 288 in 1 place, below massif's threshold (01.00%)
+    n1: 1980 0x438F391: parse_array_defs (conf.c:1094)
+     n2: 1980 0x438F023: parse_defs (conf.c:1234)
+      n1: 1872 0x438F251: parse_defs (conf.c:1231)
+       n0: 1872 in 2 places, all below massif's threshold (01.00%)
+      n0: 108 in 1 place, below massif's threshold (01.00%)
+   n2: 5292 0x438EFFA: parse_defs (conf.c:1225)
+    n2: 4104 0x438F251: parse_defs (conf.c:1231)
+     n2: 2304 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 2052 0x4393356: snd_config_update (conf.c:3799)
+       n1: 2052 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 2052 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 2052 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 2052 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 2052 0x50731CA: ???
+      n0: 252 in 1 place, below massif's threshold (01.00%)
+     n1: 1800 0x438F251: parse_defs (conf.c:1231)
+      n0: 1800 in 2 places, all below massif's threshold (01.00%)
+    n0: 1188 in 2 places, all below massif's threshold (01.00%)
+   n0: 2304 in 3 places, all below massif's threshold (01.00%)
+  n0: 36 in 2 places, all below massif's threshold (01.00%)
+ n1: 10088 0x400AE0E: _dl_new_object (dl-object.c:77)
+  n1: 10088 0x4006436: _dl_map_object_from_fd (dl-load.c:1051)
+   n2: 10088 0x400839E: _dl_map_object (dl-load.c:2568)
+    n1: 10088 0x400D166: openaux (dl-deps.c:65)
+     n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+      n1: 10088 0x4012DB8: dl_open_worker (dl-open.c:262)
+       n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+        n1: 10088 0x4462BE7: dlopen_doit (dlopen.c:67)
+         n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+          n0: 10088 0x0: ???
+    n0: 0 in 1 place, below massif's threshold (01.00%)
+ n0: 9163 in 89 places, all below massif's threshold (01.00%)
+ n2: 6224 0x438BE81: copy_local_string.isra.2 (conf.c:766)
+  n0: 4657 in 125 places, all below massif's threshold (01.00%)
+  n0: 1567 0x61666562: ???
+ n2: 4224 0x58E81CC: pa_xmalloc0 (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+  n1: 4224 0x58F910D: pa_flist_new_with_name (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+   n0: 4224 in 5 places, all below massif's threshold (01.00%)
+  n0: 0 in 4 places, all below massif's threshold (01.00%)
+ n1: 2592 0x401045B: _dl_check_map_versions (dl-version.c:300)
+  n1: 2592 0x4013369: dl_open_worker (dl-open.c:268)
+   n1: 2592 0x400ECBD: _dl_catch_error (dl-error.c:178)
+    n1: 2592 0x4462BE7: dlopen_doit (dlopen.c:67)
+     n1: 2592 0x400ECBD: _dl_catch_error (dl-error.c:178)
+      n0: 2592 0x0: ???
+ n1: 2240 0x8076B0F: __gnu_cxx::new_allocator<LetterPattern>::allocate(unsigned int, void const*) (new_allocator.h:92)
+  n1: 2240 0x80769A6: std::_Vector_base<LetterPattern, std::allocator<LetterPattern> >::_M_allocate(unsigned int) (in /home/puppy/NetBeansProjects/RealTimeBeatGenerationThesis/dist/Debug_To_Release/GNU-Linux-x86/realtimebeatgenerationthesis)
+   n1: 2240 0x80765E8: std::vector<LetterPattern, std::allocator<LetterPattern> >::_M_insert_aux(__gnu_cxx::__normal_iterator<LetterPattern*, std::vector<LetterPattern, std::allocator<LetterPattern> > >, LetterPattern const&) (vector.tcc:327)
+    n1: 2240 0x807646B: std::vector<LetterPattern, std::allocator<LetterPattern> >::push_back(LetterPattern const&) (stl_vector.h:834)
+     n0: 2240 in 12 places, all below massif's threshold (01.00%)
+ n1: 2004 0x408CC68: MidiInApi::MidiInApi(unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+  n0: 2004 0x587409A: ???
+#-----------
+snapshot=62
+#-----------
+time=502672462
+mem_heap_B=115543
+mem_heap_extra_B=19529
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=502674079
+mem_heap_B=115463
+mem_heap_extra_B=19457
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=502675940
+mem_heap_B=115163
+mem_heap_extra_B=19469
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=502677829
+mem_heap_B=115163
+mem_heap_extra_B=19469
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=502679503
+mem_heap_B=115091
+mem_heap_extra_B=19389
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=502681141
+mem_heap_B=114983
+mem_heap_extra_B=19289
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=502682815
+mem_heap_B=114891
+mem_heap_extra_B=19213
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=502684453
+mem_heap_B=114831
+mem_heap_extra_B=19129
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=502692408
+mem_heap_B=117647
+mem_heap_extra_B=19089
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=502724017
+mem_heap_B=117655
+mem_heap_extra_B=19097
+mem_stacks_B=0
+heap_tree=detailed
+n11: 117655 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 32768 0x440C12D: snd_seq_hw_open (seq_hw.c:484)
+  n1: 32768 0x440C400: _snd_seq_hw_open (seq_hw.c:555)
+   n1: 32768 0x440C665: snd_seq_open_conf (seq.c:918)
+    n1: 32768 0x440CB06: snd_seq_open_noupdate (seq.c:939)
+     n2: 32768 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+      n1: 16384 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n1: 16384 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+        n0: 16384 0x50731CA: ???
+      n1: 16384 0x408D843: MidiInAlsa::MidiInAlsa(std::string, unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n0: 16384 0x587409A: ???
+ n1: 28000 0x440C17D: snd_seq_hw_open (seq_hw.c:493)
+  n1: 28000 0x440C400: _snd_seq_hw_open (seq_hw.c:555)
+   n1: 28000 0x440C665: snd_seq_open_conf (seq.c:918)
+    n1: 28000 0x440CB06: snd_seq_open_noupdate (seq.c:939)
+     n2: 28000 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+      n1: 14000 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n1: 14000 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+        n0: 14000 0x50731CA: ???
+      n1: 14000 0x408D843: MidiInAlsa::MidiInAlsa(std::string, unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n0: 14000 0x587409A: ???
+ n2: 18288 0x438BF00: _snd_config_make (conf.c:902)
+  n3: 18252 0x438BFD7: _snd_config_make_add (conf.c:928)
+   n2: 10656 0x438CBAE: parse_value (conf.c:1022)
+    n3: 8676 0x438EF8C: parse_defs (conf.c:1248)
+     n2: 6552 0x438F251: parse_defs (conf.c:1231)
+      n2: 4500 0x438F251: parse_defs (conf.c:1231)
+       n2: 2268 0x438F251: parse_defs (conf.c:1231)
+        n2: 1620 0x438F58C: snd_config_load1 (conf.c:1661)
+         n1: 1548 0x4393356: snd_config_update (conf.c:3799)
+          n1: 1548 0x440CD0D: snd_seq_open (seq.c:979)
+           n1: 1548 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 1548 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n1: 1548 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+              n0: 1548 0x50731CA: ???
+         n0: 72 in 1 place, below massif's threshold (01.00%)
+        n0: 648 in 1 place, below massif's threshold (01.00%)
+       n2: 2232 0x438F58C: snd_config_load1 (conf.c:1661)
+        n1: 2016 0x4393356: snd_config_update (conf.c:3799)
+         n1: 2016 0x440CD0D: snd_seq_open (seq.c:979)
+          n1: 2016 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 2016 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 2016 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n0: 2016 0x50731CA: ???
+        n0: 216 in 1 place, below massif's threshold (01.00%)
+      n2: 2052 0x438F58C: snd_config_load1 (conf.c:1661)
+       n1: 1728 0x4393356: snd_config_update (conf.c:3799)
+        n1: 1728 0x440CD0D: snd_seq_open (seq.c:979)
+         n1: 1728 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1728 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1728 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n0: 1728 0x50731CA: ???
+       n0: 324 in 1 place, below massif's threshold (01.00%)
+     n1: 1836 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 1836 0x4393356: snd_config_update (conf.c:3799)
+       n1: 1836 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 1836 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 1836 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1836 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 1836 0x50731CA: ???
+     n0: 288 in 1 place, below massif's threshold (01.00%)
+    n1: 1980 0x438F391: parse_array_defs (conf.c:1094)
+     n2: 1980 0x438F023: parse_defs (conf.c:1234)
+      n1: 1872 0x438F251: parse_defs (conf.c:1231)
+       n0: 1872 in 2 places, all below massif's threshold (01.00%)
+      n0: 108 in 1 place, below massif's threshold (01.00%)
+   n2: 5292 0x438EFFA: parse_defs (conf.c:1225)
+    n2: 4104 0x438F251: parse_defs (conf.c:1231)
+     n2: 2304 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 2052 0x4393356: snd_config_update (conf.c:3799)
+       n1: 2052 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 2052 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 2052 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 2052 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 2052 0x50731CA: ???
+      n0: 252 in 1 place, below massif's threshold (01.00%)
+     n1: 1800 0x438F251: parse_defs (conf.c:1231)
+      n0: 1800 in 2 places, all below massif's threshold (01.00%)
+    n0: 1188 in 2 places, all below massif's threshold (01.00%)
+   n0: 2304 in 3 places, all below massif's threshold (01.00%)
+  n0: 36 in 2 places, all below massif's threshold (01.00%)
+ n1: 10088 0x400AE0E: _dl_new_object (dl-object.c:77)
+  n1: 10088 0x4006436: _dl_map_object_from_fd (dl-load.c:1051)
+   n2: 10088 0x400839E: _dl_map_object (dl-load.c:2568)
+    n1: 10088 0x400D166: openaux (dl-deps.c:65)
+     n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+      n1: 10088 0x4012DB8: dl_open_worker (dl-open.c:262)
+       n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+        n1: 10088 0x4462BE7: dlopen_doit (dlopen.c:67)
+         n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+          n0: 10088 0x0: ???
+    n0: 0 in 1 place, below massif's threshold (01.00%)
+ n0: 8999 in 90 places, all below massif's threshold (01.00%)
+ n2: 6224 0x438BE81: copy_local_string.isra.2 (conf.c:766)
+  n0: 4657 in 125 places, all below massif's threshold (01.00%)
+  n0: 1567 0x61666562: ???
+ n2: 4224 0x58E81CC: pa_xmalloc0 (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+  n1: 4224 0x58F910D: pa_flist_new_with_name (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+   n0: 4224 in 5 places, all below massif's threshold (01.00%)
+  n0: 0 in 4 places, all below massif's threshold (01.00%)
+ n1: 2592 0x401045B: _dl_check_map_versions (dl-version.c:300)
+  n1: 2592 0x4013369: dl_open_worker (dl-open.c:268)
+   n1: 2592 0x400ECBD: _dl_catch_error (dl-error.c:178)
+    n1: 2592 0x4462BE7: dlopen_doit (dlopen.c:67)
+     n1: 2592 0x400ECBD: _dl_catch_error (dl-error.c:178)
+      n0: 2592 0x0: ???
+ n1: 2548 0x8054489: State::State() (State.cpp:15)
+  n1: 2548 0x805B711: MarkovEngineConsumer::operator()() (MarkovEngineConsumer.cpp:56)
+   n1: 2548 0x8073E02: boost::detail::thread_data<MarkovEngineConsumer>::run() (thread.hpp:74)
+    n1: 2548 0x40554EA: thread_proxy (in /usr/local/lib/libboost_thread.so.1.51.0)
+     n0: 2548 0x42B4D3C: clone (clone.S:130)
+ n1: 2004 0x408CC68: MidiInApi::MidiInApi(unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+  n0: 2004 0x587409A: ???
+ n1: 1920 0x8076B0F: __gnu_cxx::new_allocator<LetterPattern>::allocate(unsigned int, void const*) (new_allocator.h:92)
+  n1: 1920 0x80769A6: std::_Vector_base<LetterPattern, std::allocator<LetterPattern> >::_M_allocate(unsigned int) (in /home/puppy/NetBeansProjects/RealTimeBeatGenerationThesis/dist/Debug_To_Release/GNU-Linux-x86/realtimebeatgenerationthesis)
+   n1: 1920 0x80765E8: std::vector<LetterPattern, std::allocator<LetterPattern> >::_M_insert_aux(__gnu_cxx::__normal_iterator<LetterPattern*, std::vector<LetterPattern, std::allocator<LetterPattern> > >, LetterPattern const&) (vector.tcc:327)
+    n1: 1920 0x807646B: std::vector<LetterPattern, std::allocator<LetterPattern> >::push_back(LetterPattern const&) (stl_vector.h:834)
+     n0: 1920 in 12 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=72
+#-----------
+time=502726024
+mem_heap_B=117667
+mem_heap_extra_B=19109
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=502732568
+mem_heap_B=117679
+mem_heap_extra_B=19121
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=608211485
+mem_heap_B=117704
+mem_heap_extra_B=19136
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=608246836
+mem_heap_B=117784
+mem_heap_extra_B=19144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=608255965
+mem_heap_B=117928
+mem_heap_extra_B=19152
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=608257992
+mem_heap_B=117952
+mem_heap_extra_B=19168
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=608273783
+mem_heap_B=117984
+mem_heap_extra_B=19184
+mem_stacks_B=0
+heap_tree=peak
+n11: 117984 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 32768 0x440C12D: snd_seq_hw_open (seq_hw.c:484)
+  n1: 32768 0x440C400: _snd_seq_hw_open (seq_hw.c:555)
+   n1: 32768 0x440C665: snd_seq_open_conf (seq.c:918)
+    n1: 32768 0x440CB06: snd_seq_open_noupdate (seq.c:939)
+     n2: 32768 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+      n1: 16384 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n1: 16384 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+        n0: 16384 0x50731CA: ???
+      n1: 16384 0x408D843: MidiInAlsa::MidiInAlsa(std::string, unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n0: 16384 0x587409A: ???
+ n1: 28000 0x440C17D: snd_seq_hw_open (seq_hw.c:493)
+  n1: 28000 0x440C400: _snd_seq_hw_open (seq_hw.c:555)
+   n1: 28000 0x440C665: snd_seq_open_conf (seq.c:918)
+    n1: 28000 0x440CB06: snd_seq_open_noupdate (seq.c:939)
+     n2: 28000 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+      n1: 14000 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n1: 14000 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+        n0: 14000 0x50731CA: ???
+      n1: 14000 0x408D843: MidiInAlsa::MidiInAlsa(std::string, unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+       n0: 14000 0x587409A: ???
+ n2: 18288 0x438BF00: _snd_config_make (conf.c:902)
+  n3: 18252 0x438BFD7: _snd_config_make_add (conf.c:928)
+   n2: 10656 0x438CBAE: parse_value (conf.c:1022)
+    n3: 8676 0x438EF8C: parse_defs (conf.c:1248)
+     n2: 6552 0x438F251: parse_defs (conf.c:1231)
+      n2: 4500 0x438F251: parse_defs (conf.c:1231)
+       n2: 2268 0x438F251: parse_defs (conf.c:1231)
+        n2: 1620 0x438F58C: snd_config_load1 (conf.c:1661)
+         n1: 1548 0x4393356: snd_config_update (conf.c:3799)
+          n1: 1548 0x440CD0D: snd_seq_open (seq.c:979)
+           n1: 1548 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 1548 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n1: 1548 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+              n0: 1548 0x50731CA: ???
+         n0: 72 in 1 place, below massif's threshold (01.00%)
+        n0: 648 in 1 place, below massif's threshold (01.00%)
+       n2: 2232 0x438F58C: snd_config_load1 (conf.c:1661)
+        n1: 2016 0x4393356: snd_config_update (conf.c:3799)
+         n1: 2016 0x440CD0D: snd_seq_open (seq.c:979)
+          n1: 2016 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 2016 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n1: 2016 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+             n0: 2016 0x50731CA: ???
+        n0: 216 in 1 place, below massif's threshold (01.00%)
+      n2: 2052 0x438F58C: snd_config_load1 (conf.c:1661)
+       n1: 1728 0x4393356: snd_config_update (conf.c:3799)
+        n1: 1728 0x440CD0D: snd_seq_open (seq.c:979)
+         n1: 1728 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1728 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n1: 1728 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+            n0: 1728 0x50731CA: ???
+       n0: 324 in 1 place, below massif's threshold (01.00%)
+     n1: 1836 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 1836 0x4393356: snd_config_update (conf.c:3799)
+       n1: 1836 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 1836 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 1836 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 1836 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 1836 0x50731CA: ???
+     n0: 288 in 1 place, below massif's threshold (01.00%)
+    n1: 1980 0x438F391: parse_array_defs (conf.c:1094)
+     n2: 1980 0x438F023: parse_defs (conf.c:1234)
+      n1: 1872 0x438F251: parse_defs (conf.c:1231)
+       n0: 1872 in 2 places, all below massif's threshold (01.00%)
+      n0: 108 in 1 place, below massif's threshold (01.00%)
+   n2: 5292 0x438EFFA: parse_defs (conf.c:1225)
+    n2: 4104 0x438F251: parse_defs (conf.c:1231)
+     n2: 2304 0x438F58C: snd_config_load1 (conf.c:1661)
+      n1: 2052 0x4393356: snd_config_update (conf.c:3799)
+       n1: 2052 0x440CD0D: snd_seq_open (seq.c:979)
+        n1: 2052 0x408CFEE: createSequencer(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+         n1: 2052 0x408D08C: MidiOutAlsa::initialize(std::string const&) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+          n1: 2052 0x408DC0B: MidiOutAlsa::MidiOutAlsa(std::string) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+           n0: 2052 0x50731CA: ???
+      n0: 252 in 1 place, below massif's threshold (01.00%)
+     n1: 1800 0x438F251: parse_defs (conf.c:1231)
+      n0: 1800 in 2 places, all below massif's threshold (01.00%)
+    n0: 1188 in 2 places, all below massif's threshold (01.00%)
+   n0: 2304 in 3 places, all below massif's threshold (01.00%)
+  n0: 36 in 2 places, all below massif's threshold (01.00%)
+ n1: 10088 0x400AE0E: _dl_new_object (dl-object.c:77)
+  n1: 10088 0x4006436: _dl_map_object_from_fd (dl-load.c:1051)
+   n2: 10088 0x400839E: _dl_map_object (dl-load.c:2568)
+    n1: 10088 0x400D166: openaux (dl-deps.c:65)
+     n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+      n1: 10088 0x4012DB8: dl_open_worker (dl-open.c:262)
+       n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+        n1: 10088 0x4462BE7: dlopen_doit (dlopen.c:67)
+         n1: 10088 0x400ECBD: _dl_catch_error (dl-error.c:178)
+          n0: 10088 0x0: ???
+    n0: 0 in 1 place, below massif's threshold (01.00%)
+ n0: 9328 in 92 places, all below massif's threshold (01.00%)
+ n2: 6224 0x438BE81: copy_local_string.isra.2 (conf.c:766)
+  n0: 4657 in 125 places, all below massif's threshold (01.00%)
+  n0: 1567 0x61666562: ???
+ n2: 4224 0x58E81CC: pa_xmalloc0 (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+  n1: 4224 0x58F910D: pa_flist_new_with_name (in /usr/lib/i386-linux-gnu/libpulsecommon-1.1.so)
+   n0: 4224 in 5 places, all below massif's threshold (01.00%)
+  n0: 0 in 4 places, all below massif's threshold (01.00%)
+ n1: 2592 0x401045B: _dl_check_map_versions (dl-version.c:300)
+  n1: 2592 0x4013369: dl_open_worker (dl-open.c:268)
+   n1: 2592 0x400ECBD: _dl_catch_error (dl-error.c:178)
+    n1: 2592 0x4462BE7: dlopen_doit (dlopen.c:67)
+     n1: 2592 0x400ECBD: _dl_catch_error (dl-error.c:178)
+      n0: 2592 0x0: ???
+ n1: 2548 0x8054489: State::State() (State.cpp:15)
+  n1: 2548 0x805B711: MarkovEngineConsumer::operator()() (MarkovEngineConsumer.cpp:56)
+   n1: 2548 0x8073E02: boost::detail::thread_data<MarkovEngineConsumer>::run() (thread.hpp:74)
+    n1: 2548 0x40554EA: thread_proxy (in /usr/local/lib/libboost_thread.so.1.51.0)
+     n0: 2548 0x42B4D3C: clone (clone.S:130)
+ n1: 2004 0x408CC68: MidiInApi::MidiInApi(unsigned int) (in /usr/local/rtmidi-2.0.1/librtmidi.so.2.0.0)
+  n0: 2004 0x587409A: ???
+ n1: 1920 0x8076B0F: __gnu_cxx::new_allocator<LetterPattern>::allocate(unsigned int, void const*) (new_allocator.h:92)
+  n1: 1920 0x80769A6: std::_Vector_base<LetterPattern, std::allocator<LetterPattern> >::_M_allocate(unsigned int) (in /home/puppy/NetBeansProjects/RealTimeBeatGenerationThesis/dist/Debug_To_Release/GNU-Linux-x86/realtimebeatgenerationthesis)
+   n1: 1920 0x80765E8: std::vector<LetterPattern, std::allocator<LetterPattern> >::_M_insert_aux(__gnu_cxx::__normal_iterator<LetterPattern*, std::vector<LetterPattern, std::allocator<LetterPattern> > >, LetterPattern const&) (vector.tcc:327)
+    n1: 1920 0x807646B: std::vector<LetterPattern, std::allocator<LetterPattern> >::push_back(LetterPattern const&) (stl_vector.h:834)
+     n0: 1920 in 12 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=79
+#-----------
+time=1719945327
+mem_heap_B=117953
+mem_heap_extra_B=19159
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=1719947783
+mem_heap_B=117895
+mem_heap_extra_B=19129
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=81
+#-----------
+time=1719949624
+mem_heap_B=117795
+mem_heap_extra_B=19085
+mem_stacks_B=0
+heap_tree=empty

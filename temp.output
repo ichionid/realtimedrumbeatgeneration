@@ -1,0 +1,159 @@
+SynchronizedQueue Constructor
+Starting Variable-Order Markov Chain
+0
+Meter ConstructorDrumMachine destructor
+DrumMachine destructor
+DrumMachine destructor
+#####################
+#####################
+#####################
+#####################
+#####################
+#####################
+#####################
+#####################
+4==4?
+4==4?
+###############INPUT############
+
+Measure : 0
+cr:.... .... .... .... .... .... .... .... 
+hh:X... X... ..X. .... X... ..X. .... .... 
+t1:.... .... .... .... .... .... .... .... 
+sn:.... .... X... ..X. .... X... ..X. X.X. 
+lt:.... .... .... .... .... .... .... .... 
+bd:X... .... ..X. .... X... ..X. .... .... 
+4 Letter, pitch and velocity
+3 Letter, pitch and velocity
+2 Letter, pitch and velocity
+1 Letter, pitch and velocity
+4 Letter, pitch
+3 Letter, pitch
+2 Letter, pitch
+1 Letter, pitch
+4 Letter
+3 Letter
+2 Letter
+1 Letter
+.... .... .... .... .... .... .... .... 
+RA48::Voices::6
+RA48::NOTES::32
+v_v_rules.size():6
+.... .... .... .... .... .... .... .... 
+U,U,U,U
+FOUND:Rhythm!!!! at::0for voice0
+U,U,U,U
+FOUND:Rhythm!!!! at::0for voice1
+U,U,U,U
+FOUND:Rhythm!!!! at::0for voice2
+N,U,R,N
+U,R,N,R
+N,F,F,U
+N,R,R,U
+R,N,F,R
+FOUND:Rhythm!!!! at::3for voice3
+U,U,U,U
+FOUND:Rhythm!!!! at::0for voice4
+N,U,R,N
+U,R,N,R
+N,F,F,U
+N,R,R,U
+FOUND:Rhythm!!!! at::286for voice5
+Solution::YES, Rhythmic Automata.1
+.... .... .... .... .... .... .... ....
+X... X... ..X. .... X... ..X. .... ....
+.... .... .... .... .... .... .... ....
+.... X... X... ..X. .... X... ..X. ..X.
+.... .... .... .... .... .... .... ....
+X..X X... .... .... .... .... .... .X..
+Pattern:XooX
+Pattern:Xooo
+Pattern:XoXo
+Pattern:ooXo
+Pattern:Xooo
+Pattern:XoXo
+Pattern:ooXo
+Pattern:oXXo
+temp_voice_vector::0
+temp_voice_vector::5
+Attempt to add for voice::1
+Note22
+Size before::0
+Size after::1
+Attempt to add for voice::1
+Note16
+Size before::0
+Size after::1
+Attempt to add for voice::1
+Note10
+Size before::0
+Size after::1
+Attempt to add for voice::1
+Note4
+Size before::0
+Size after::1
+Attempt to add for voice::1
+Note0
+Size before::0
+Size after::1
+temp_voice_vector::0
+temp_voice_vector::6
+Attempt to add for voice::3
+Note30
+Size before::0
+Size after::1
+Attempt to add for voice::3
+Note26
+Size before::0
+Size after::1
+Attempt to add for voice::3
+Note20
+Size before::1
+Size after::2
+Attempt to add for voice::3
+Note14
+Size before::0
+Size after::1
+Attempt to add for voice::3
+Note8
+Size before::1
+Size after::2
+Attempt to add for voice::3
+Note4
+Size before::1
+Size after::2
+temp_voice_vector::0
+temp_voice_vector::4
+Attempt to add for voice::5
+Note29
+Size before::1
+Size after::2
+Attempt to add for voice::5
+Note4
+Size before::2
+Size after::3
+Attempt to add for voice::5
+Note3
+Size before::1
+Size after::2
+Attempt to add for voice::5
+Note0
+Size before::2
+Size after::3
+void State::print_state_letters()
+cr:.... .... .... .... .... .... .... .... 
+hh:X... .... .... .... .... .... .... .... 
+t1:.... .... .... .... .... .... .... .... 
+sn:.... .... .... .... .... .... .... .... 
+lt:.... .... .... .... .... .... .... .... 
+bd:X..X .... .... .... .... .... .... .... Solution::YES, Rhythmic Automata.2
+void State::print_state_letters()
+cr:.... .... .... .... .... .... .... .... 
+hh:X... .... .... .... .... .... .... .... 
+t1:.... .... .... .... .... .... .... .... 
+sn:.... .... .... .... .... .... .... .... 
+lt:.... .... .... .... .... .... .... .... 
+bd:X..X .... .... .... .... .... .... .... Saving file :output/output
+DrumMachine destructor
+DrumMachine destructor
+SynchronizedQueue Destructor
